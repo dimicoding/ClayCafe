@@ -3,3 +3,7 @@
     top: -10px;
     position: relative;
 }
+
+.btn{
+    --bs-btn-border-color: none;
+}
