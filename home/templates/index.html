@@ -1,35 +1,24 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "base.html" %} {% load static %} {% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col-7 col-md-6 my-auto"></div>
+  </div>
+</div>
+{% endblock %} {% block content %}
 
-{% block page_header %}
-  <div class="container header-container">
-    <div class="row">
-      <div class="col-7 col-md-6 my-auto">
+<div class="img-fluid position-relative">
+  <img class="card-img overlay-wide" src="{{ MEDIA_URL }}tom-crew-S2WN_iXhAEQ-unsplash.jpg" alt="" />
+  <div class="row position-absolute hero-text-top hero-text-left translate-middle">
+    <div class="col-xl-5 col-md-6 my-auto">
+      <h1 class="logo-font hero-text-color ">
+        Handcrafted ceramics inspired by tradition
+      </h1>
+      <div class="my-5">
+        <h4>
+          <a href="" class="shop-now-button btn btn-lg rounded-5 text-uppercase py-3">Shop Now</a>
+        </h4>
       </div>
     </div>
-  </div>
-{% endblock %}
-
-{% block content %}
-
-<div class="img-fluid">
-  <img class="card-img overlay-wide" src="{{ MEDIA_URL }}tom-crew-S2WN_iXhAEQ-unsplash.jpg" alt="">
-</div>
-
-
-<div class="container h-100">
-  <div class="row h-100">
-      <div class="col-7 col-md-6 my-auto">
-          <h1 class="logo-font text-black">
-            Handcrafted ceramics inspired by tradition
-          </h1>
-          <div class="my-5">
-              <h4>
-                  <a href="" class="shop-now-button btn btn-lg rounded-5 text-uppercase py-3">Shop Now</a>
-              </h4>
-          </div>
-      </div>
-      <h4>Ive made this!</h4>
   </div>
 </div>
 

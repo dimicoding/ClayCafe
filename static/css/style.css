@@ -47,8 +47,18 @@ body {
         padding-top: 164px;
 }
 
-/* __________________style hero img__________________________ */
+/* __________________style text hero img__________________________ */
 
+.hero-text-left {
+    left: 37%!important;
+}
+.hero-text-top {
+    top: 60%!important;
+}
+.hero-text-color {
+    color: #EEEEEE;
+    font-weight: 700;
+}
   /* __________''__________________ */
 
 .font-weight-bold {
@@ -65,9 +75,10 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: rgba(0, 0, 0, 0.2);
     min-width: 260px;
+    color: #fff;
+    border: 2px solid #EEEEEE;
 }
 
 .btn-black {
@@ -81,12 +92,9 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: rgba(0, 0, 0, 0);
     color: white;
-}
-
-.text-black {
-    color: #000 !important;
+    border: 2px solid #EEEEEE;
 }
 
 .border-black {
