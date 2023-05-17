@@ -24,15 +24,37 @@
 
 html {
     height: 3000px;
+    scroll-behavior: smooth;
 }
 
 body {
-    /* background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
-    background-size: cover; */
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
 }
+
+#navbar-scroll {
+    color: #103948;
+    position: fixed;
+    z-index: 10;
+    /* Make it stick/fixed */
+    top: 0px;
+    /* Stay on top */
+    transition: top 0.5s;
+    /* Transition effect when sliding down (and up) */
+}
+.header-container {
+        padding-top: 164px;
+}
+
+/* __________________style hero img__________________________ */
+
+  /* __________''__________________ */
+
+.font-weight-bold {
+    font-weight: 500!important;
+}
+
 
 .logo-font {
     text-transform: uppercase;
