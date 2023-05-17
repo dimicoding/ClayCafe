@@ -43,6 +43,32 @@ body {
     transition: top 0.5s;
     /* Transition effect when sliding down (and up) */
 }
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #103948BF;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #103948BF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.mainnav-clr{
+    color: #000;
+}
 .header-container {
         padding-top: 164px;
 }
@@ -58,11 +84,13 @@ body {
 .hero-text-color {
     color: #EEEEEE;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
   /* __________''__________________ */
 
 .font-weight-bold {
-    font-weight: 500!important;
+    font-weight: 600!important;
 }
 
 
