@@ -70,8 +70,31 @@ body {
     color: #000;
 }
 .header-container {
-        padding-top: 164px;
+    padding-top: 164px;
 }
+.nav-link{
+    padding: 0px;
+}
+.m-right {
+    margin-right: 0.5rem;
+}
+
+.navbar-toggler {
+    left: 10px;
+    position: relative;
+}
+.navbar-icons-container {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 15;
+    padding: 10px;
+}
+
+  .navbar-collapse {
+    padding-top: 10px;
+}
+
 
 /* __________________style text hero img__________________________ */
 
@@ -151,4 +174,22 @@ body {
     .header-container {
         padding-top: 164px;
     }
+}
+/* small screens */
+@media (min-width: 576px) {
+    .header-container {
+        padding-top: 80px;
+    }
+
+}
+/* extrasmall screens */
+@media (max-width: 576px) {
+    .header-container {
+        padding-top: 100px;
+    }
+    .img-size {
+        height: 400px;
+        width: 300px;
+    }
+
 }
