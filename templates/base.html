@@ -24,6 +24,7 @@
 
     {% block extra_css %}
     {% endblock %}
+
     <title> ClayCafe {% block extra_title %}{% endblock %}</title>
 </head>
 <body>
@@ -134,6 +135,87 @@
 
     {% block content %}
     
+    {% endblock %}
+
+    {% block footer%}
+    <!-- footer adapted from: https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+        <footer style="background-color: #EEEEEE;">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 text-center">
+                        <h5 class="mb-1 text-dark">opening hours</h5>
+                        <table class="table" style="border-color: #666;">
+                            <tbody>
+                                <tr>
+                                    <td>Mon - Fri:</td>
+                                    <td>8am - 9pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sat - Sun:</td>
+                                    <td>8am - 1am</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 text-center">
+                        <h5 class="mb-3 text-dark">Quick Link</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1">
+                                <a href="#!" style="color: #4f4f4f;">Home</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" style="color: #4f4f4f;">Cafe</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" style="color: #4f4f4f;">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: #4f4f4f;">Workshops</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: #4f4f4f;">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: #4f4f4f;">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4 text-center">
+                        <h5 class="mb-3 text-dark">Location</h5>
+                        <div class="container">
+                            <iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=6.952435970306397%2C50.94388139624848%2C6.988270282745362%2C50.956128972591884&amp;layer=mapnik&amp;marker=50.9505311%2C6.9659355">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <section class="text-center mb-5">
+                    <a href="" class="mainnav-clr me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class=" me-4">
+                        <i class="mainnav-clr fab fa-twitter"></i>
+                    </a>
+                    <a href="" class=" me-4">
+                        <i class="mainnav-clr fab fa-google"></i>
+                    </a>
+                    <a href="" class=" me-4">
+                        <i class="mainnav-clr fab fa-instagram"></i>
+                    </a>
+                    <a href="" class=" me-4">
+                        <i class="mainnav-clr fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class=" me-4">
+                        <i class="mainnav-clr fab fa-github"></i>
+                    </a>
+                </section>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright:
+                <a class="text-dark" href="">ClayCafe.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
     {% endblock %}
 
     {% block corejs %}
