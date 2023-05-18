@@ -69,14 +69,23 @@
                     </li>
 
                     <li class="list-inline-item dropdown px-2">
-                        <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">Profile</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                            
+                        {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                                <a href="" class="dropdown-item">Product Management</a>
+                            {% endif %}
+                            <a href="" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                        {% else %}
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                        {% endif %}
                         </div>
                     </li>
                     
@@ -182,11 +191,9 @@
                     </div>
                     <div class="col-lg-4 col-md-12 mb-4 text-center">
                         <h5 class="mb-3 text-dark">Location</h5>
-                        <div class="container">
-                            <iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        <iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                                 src="https://www.openstreetmap.org/export/embed.html?bbox=6.952435970306397%2C50.94388139624848%2C6.988270282745362%2C50.956128972591884&amp;layer=mapnik&amp;marker=50.9505311%2C6.9659355">
-                            </iframe>
-                        </div>
+                        </iframe>
                     </div>
                 </div>
                 <section class="text-center mb-5">
