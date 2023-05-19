@@ -23,7 +23,6 @@
 
 
 html {
-    height: 3000px;
     scroll-behavior: smooth;
 }
 
@@ -94,7 +93,7 @@ body {
 }
 
 
-/* __________________style text hero img__________________________ */
+/* __________________style text/img hero img__________________________ */
 
 .hero-text-left {
     left: 37%!important;
@@ -108,6 +107,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
   /* __________''__________________ */
 
 .font-weight-bold {
@@ -194,6 +194,7 @@ a {
 }
 
 
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -202,7 +203,6 @@ a {
     max-width: 100%;
   }
   .header-container {
-    margin-top: 100px;
 }
 }
 
