@@ -193,6 +193,7 @@ a {
 	color: #17a2b8; /* text-info */
 }
 
+/* ______styling cafe menu__________ */
 
 
 /* -------------------------------- Media Queries */
@@ -201,9 +202,7 @@ a {
 @media (min-width: 1200px) {
   .container {
     max-width: 100%;
-  }
-  .header-container {
-}
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -238,6 +237,10 @@ a {
     #map{
         width:100%; 
         height: 100%;
+    }
+    .img-mob{
+        height: 400px;
+
     }
 
 }
