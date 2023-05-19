@@ -69,9 +69,7 @@ body {
 .mainnav-clr{
     color: #000;
 }
-.header-container {
-    padding-top: 164px;
-}
+
 .nav-link{
     padding: 0px;
 }
@@ -151,6 +149,49 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+a {
+    text-decoration: unset;
+}
+.btn {
+    --bs-btn-padding-x: none;
+}
+/* Allauth form formatting */
+
+.allauth-form-inner-content div {
+    margin-top: 1rem; /* mt-4 */
+}
+
+
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #537188;
+}
+
+.allauth-form-inner-content button,
+
+.allauth-button {
+    display: flex;
+    margin: auto;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transition: color .15s ease-in-out,background-color .25s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
 
 
 /* -------------------------------- Media Queries */
@@ -160,6 +201,9 @@ body {
   .container {
     max-width: 100%;
   }
+  .header-container {
+    margin-top: 100px;
+}
 }
 
 /* fixed top navbar only on medium and up */
@@ -173,7 +217,7 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        margin-top: 100px;
     }
 }
 /* small screens */
