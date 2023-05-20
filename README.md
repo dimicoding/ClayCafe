@@ -39,7 +39,7 @@
 
 # User Stories
 
-•	EPIC: Customer Stories, general view and navigation:
+###	EPIC: Customer Stories, general view and navigation:
 
 1.	As a customer, I want a website with a clean and intuitive navbar to easily navigate and find the information I need quickly and efficiently.
 
@@ -51,21 +51,67 @@
 
 5.	As a customer, I want to easily see the total amount of my purchases at any time so I can review my order before buying.
 
-EPIC: Allauth Registration and User account:
+### EPIC: Allauth Registration and User account:
 
-7.	As a user, I want to sign up for the website quickly and easily so that I can start using the full functionality of the website and enjoy a seamless user experience.
+6.	As a user, I want to sign up for the website quickly and easily so that I can start using the full functionality of the website and enjoy a seamless user experience.
 
-8.	As a user, I want to create a profile easily so I can save my information for purchases, delivery, and commenting on the site.
+7.	As a user, I want to create a profile easily so I can save my information for purchases, delivery, and commenting on the site.
 
-9.	As a user, I want to be able to log in and log out easily so I can access my information and make purchases without filling in forms repeatedly.
+8.	As a user, I want to be able to log in and log out easily so I can access my information and make purchases without filling in forms repeatedly.
 
-10.	As a user, I want an uncomplicated way to recover my password if I forget it so I can regain access to my account.
+9.	As a user, I want an uncomplicated way to recover my password if I forget it so I can regain access to my account.
 
-11.	As a user, I want to receive a confirmation email after registering to make sure my registration was successful.
+10.	As a user, I want to receive a confirmation email after registering to make sure my registration was successful.
 
-12.	As a user, I want a personalized user profile where I can see my order history, confirmations, and payment/delivery information.
+11.	As a user, I want a personalized user profile where I can see my order history, confirmations, and payment/delivery information.
 
-13.	As a user, I want to log out from the blog whenever I want so that my personal details are not visible to anyone who may use the device after me.
+12.	As a user, I want to log out from the blog whenever I want so that my personal details are not visible to anyone who may use the device after me.
+
+###	EPIC: Sorting and searching through products.
+
+13.	As a buyer, I want to sort the list of available products based on features, popularity, price, and date added, so I can easily identify the products in which I am interested.
+
+14.	As a buyer, I want to effortlessly search and browse through categorized product lists to find items that I may want to purchase.
+
+15.	As a buyer, I want to be able to search for a product by its name or description, making it convenient for me to find a specific item I wish to buy.
+
+16.	As a buyer, I want to see a list of search results and the number of results displayed, allowing me to quickly decide if the products are of interest to me or not.
+
+###	EPIC: Buying and  Checkout:
+
+17.	As a buyer, I want to easily select the product I want so that I can quickly add the desired product to my shopping bag.
+
+18.	As a buyer, I want to see the items I have added to my shopping bag, allowing me to review the total cost of my order and verify the included items.
+
+19.	As a buyer, I want the ability to edit the number of individual items in my shopping bag, making it easy for me to make any necessary changes before proceeding to checkout.
+
+20.	As a buyer, I want a user-friendly process to enter my payment information, enabling me to complete the checkout process quickly and effortlessly.
+
+21.	As a buyer, I want a secure and efficient payment method to pay for my items, ensuring the safety and confidentiality of my credit card and delivery information.
+
+22.	As a buyer, I want to receive an order confirmation immediately after checkout, providing me with the assurance that my payment was successful, and my order is confirmed.
+
+23.	As a buyer, I want to receive an email confirmation after checkout, serving as a reference for my order and financial details, if needed in the future.
+
+### EPIC: Blog and Workshops
+
+24.	As a business owner, I want to share knowledge about diverse topics of pottery and coffee through blog posts so that I can increase the audience and attract potential customers.
+
+25.	As a business owner, I want to offer a variety of workshops to attract more people and encourage them to visit our place.
+
+26.	As a business owner, I want to connect with customers via email so that I can easily communicate the latest updates and address any questions they may have.
+
+EPIC: Admin and Store Management
+
+27. As a website owner, I want to be able to add a product so that I can include the latest items in the store.
+
+28. As a website owner, I want to be able to edit products so that I can change product prices, images, and descriptions.
+
+29. As a website owner, I want to be able to delete a product so that I can remove items that are no longer available for sale.
+
+
+
+
 
 
 # Agile Methodology
@@ -133,6 +179,11 @@ EPIC: Allauth Registration and User account:
     - Depending on the time left add new functionality.
     - SEO and Webmarketing
     - README/TESTING
+
+
+# Credits
+
+
 
 
     
