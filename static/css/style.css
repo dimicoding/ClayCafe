@@ -107,6 +107,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.hero-img{
+    position: relative;
+    top: -50px;
+}
 
   /* __________''__________________ */
 
@@ -195,6 +199,20 @@ a {
 
 /* ______styling cafe menu__________ */
 
+.coffe-menu{
+    background-size: ;
+    background: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffee-beans.jpg') center center / cover no-repeat fixed ;
+}
+.card-space {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.card {
+    color: #EEEEEE;
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 
 /* -------------------------------- Media Queries */
 
@@ -241,6 +259,10 @@ a {
     .img-mob{
         height: 400px;
 
+    }
+    .card-space {
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 
 }
