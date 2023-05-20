@@ -37,6 +37,37 @@
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgements)
 
+# User Stories
+
+•	EPIC: Customer Stories, general view and navigation:
+
+1.	As a customer, I want a website with a clean and intuitive navbar to easily navigate and find the information I need quickly and efficiently.
+
+2.	As a customer, I want to see a list of products so I can choose which ones to buy.
+
+3.	As a customer, I want to scroll down the homepage to have a quick overview of the website’s content.
+
+4.	As a customer, I want to see details about each product, like the price, description, and image.
+
+5.	As a customer, I want to easily see the total amount of my purchases at any time so I can review my order before buying.
+
+EPIC: Allauth Registration and User account:
+
+7.	As a user, I want to sign up for the website quickly and easily so that I can start using the full functionality of the website and enjoy a seamless user experience.
+
+8.	As a user, I want to create a profile easily so I can save my information for purchases, delivery, and commenting on the site.
+
+9.	As a user, I want to be able to log in and log out easily so I can access my information and make purchases without filling in forms repeatedly.
+
+10.	As a user, I want an uncomplicated way to recover my password if I forget it so I can regain access to my account.
+
+11.	As a user, I want to receive a confirmation email after registering to make sure my registration was successful.
+
+12.	As a user, I want a personalized user profile where I can see my order history, confirmations, and payment/delivery information.
+
+13.	As a user, I want to log out from the blog whenever I want so that my personal details are not visible to anyone who may use the device after me.
+
+
 # Agile Methodology
 
 * Base- Sprint 1 - 16/05/2023 - 20/05/2023 (Finished at ??/05/2023)
