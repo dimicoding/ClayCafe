@@ -101,7 +101,7 @@
 
 26.	As a business owner, I want to connect with customers via email so that I can easily communicate the latest updates and address any questions they may have.
 
-EPIC: Admin and Store Management
+### EPIC: Admin and Store Management
 
 27. As a website owner, I want to be able to add a product so that I can include the latest items in the store.
 
