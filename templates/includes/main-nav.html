@@ -1,22 +1,29 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="{% url 'home' %}" id="">
+            <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="{% url 'home' %}"
+                id="">
                 Home
             </a>
         </li>
 
+        {% if cat_list %}
         <li class="nav-item dropdown">
-            <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="{% url 'products' %}" id=""
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Shop
+            <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                 Shop
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Vase</a>
-                <a href="" class="dropdown-item">Cups</a>
-                <a href="" class="dropdown-item">Plates &amp; Bowls </a>
-            </div>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">All Products</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                {% for item in cat_list %}
+                <li><a class="dropdown-item" href="#">{{ item }}</a></li>
+                {% endfor%}
+            </ul>
         </li>
+        {% endif %}
 
         <li class="nav-item dropdown">
             <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="#" id=""
@@ -29,14 +36,14 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="#" id="" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="#" id=""
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Blog
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="#" id="contact-link" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="#" id="contact-link"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Contact
             </a>
         </li>
