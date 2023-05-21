@@ -91,7 +91,10 @@ body {
   .navbar-collapse {
     padding-top: 10px;
 }
-
+.cat-font {
+    color: #537188;
+    text-transform: uppercase;
+}
 
 /* __________________style text/img hero img__________________________ */
 
@@ -200,14 +203,14 @@ a {
 /* ______styling cafe menu__________ */
 
 .coffe-menu{
-    background-size: ;
     background: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffee-beans.jpg') center center / cover no-repeat fixed ;
 }
 .card-space {
     margin-top: 150px;
     margin-bottom: 150px;
 }
-.card {
+
+.cafe{
     color: #EEEEEE;
     font-size: larger;
     background-color: rgba(0, 0, 0, 0.7);
