@@ -22,7 +22,7 @@
             <div class="row mt-1 mb-2"></div>
             <div class="row">
                 {% for product in products %}
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                         <div class="card h-100 border-0">
                             {% if product.image %}
                             <a href="">
@@ -36,7 +36,7 @@
                             </div>
                             <div class="card-footer bg-white pt-0 border-0 text-left">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col mb-5">
                                         <p class="mb-0 mt-2"><strong>{{ product.name }}</strong></p>
                                         <p class="">{{  product.description|slice:":80" }}(...)</p>
                                         {% if product.rating %}
