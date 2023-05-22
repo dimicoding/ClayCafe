@@ -162,6 +162,10 @@ a {
 .btn {
     --bs-btn-padding-x: none;
 }
+.custom-m{
+    margin: 20px 0;
+    text-align: justify;
+}
 /* Allauth form formatting */
 
 .allauth-form-inner-content div {

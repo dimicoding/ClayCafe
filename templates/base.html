@@ -27,17 +27,19 @@
 
     <title> ClayCafe {% block extra_title %}{% endblock %}</title>
 </head>
+
 <body>
     <header id="navbar-scroll" class="container-fluid fixed-top nav-clr">
         <div id="delivery-banner" class="nav-ship row text-center">
             <div class="col">
-                <p class="my-1">Free delivery on orders over 100€{{ free_delivery_threshold }}!</p>                
-            </div>            
+                <p class="my-1">Free delivery on orders over 100€{{ free_delivery_threshold }}!</p>
+            </div>
         </div>
         <div id="topnav" class="row justify-content-center d-none d-lg-flex pt-3">
             <div class="col-12 col-lg-4 my-auto p-5 py-lg-0 text-center text-lg-start">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><img id="logo" src="{{ MEDIA_URL }}claylogo2.png" alt=""><strong>Clay</strong>Cafe</h2>
+                    <h2 class="logo-font text-black my-0"><img id="logo" src="{{ MEDIA_URL }}claylogo2.png"
+                            alt=""><strong>Clay</strong>Cafe</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-lg-0 px-3">
@@ -57,47 +59,49 @@
             <div class="col-12 col-lg-4 my-auto p-5 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-end my-0">
                     <li class="list-inline-item dropdown px-2">
-                        <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fa-solid fa-hands-praying fa-rotate-180 fa-lg"></i></div>
                                 <p class="my-0">Workshops</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                            
+
                         </div>
                     </li>
 
                     <li class="list-inline-item dropdown px-2">
-                        <a class="nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">Profile</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                        {% if request.user.is_authenticated %}
+                            {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                                <a href="" class="dropdown-item">Product Management</a>
+                            <a href="" class="dropdown-item">Product Management</a>
                             {% endif %}
                             <a href="" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                        {% else %}
+                            {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                        {% endif %}
+                            {% endif %}
                         </div>
                     </li>
-                    
+
                     <li class="list-inline-item px-2">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}{% endif %} nav-link" href="">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
+                                    ${{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        $0.00
+                                    $0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -108,7 +112,8 @@
         </div>
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/main-nav.html' %}
@@ -121,21 +126,21 @@
     {% endblock %}
 
     {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                {% if level == 40 %}
-                    {% include 'includes/toasts/toast_error.html' %}
-                {% elif level == 30 %}
-                    {% include 'includes/toasts/toast_warning.html' %}
-                {% elif level == 25 %}
-                    {% include 'includes/toasts/toast_success.html' %}
-                {% else %}
-                    {% include 'includes/toasts/toast_info.html' %}
-                {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
+    <div class="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
 
     {% endif %}
 
@@ -143,83 +148,84 @@
     {% endblock %}
 
     {% block content %}
-    
+
     {% endblock %}
 
     {% block footer%}
     <!-- footer adapted from: https://mdbootstrap.com/docs/standard/navigation/footer/ -->
-        <footer style="background-color: #EEEEEE;">
-            <div class="container p-4">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4 text-center">
-                        <h5 class="mb-1 text-dark">opening hours</h5>
-                        <table class="table" style="border-color: #666;">
-                            <tbody>
-                                <tr>
-                                    <td>Mon - Fri:</td>
-                                    <td>8am - 9pm</td>
-                                </tr>
-                                <tr>
-                                    <td>Sat - Sun:</td>
-                                    <td>8am - 1am</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 text-center">
-                        <h5 class="mb-3 text-dark">Quick Link</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-1">
-                                <a href="{% url 'home' %}" style="color: #4f4f4f;">Home</a>
-                            </li>
-                            <li class="mb-1">
-                                <a href="{% url 'products' %}" style="color: #4f4f4f;">Shop</a>
-                            </li>
-                            <li>
-                                <a href="#!" style="color: #4f4f4f;">Workshops</a>
-                            </li>
-                            <li>
-                                <a href="#!" style="color: #4f4f4f;">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#!" style="color: #4f4f4f;">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-12 mb-4 text-center">
-                        <h5 class="mb-3 text-dark">Location</h5>
-                        <iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                                src="https://www.openstreetmap.org/export/embed.html?bbox=6.952435970306397%2C50.94388139624848%2C6.988270282745362%2C50.956128972591884&amp;layer=mapnik&amp;marker=50.9505311%2C6.9659355">
-                        </iframe>
+    <footer style="background-color: #EEEEEE;">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-1 text-center">
+                    <h5 class="mb-1 text-dark">opening hours</h5>
+                    <table class="table" style="border-color: #666;">
+                        <tbody>
+                            <tr>
+                                <td>Mon - Fri:</td>
+                                <td>8am - 9pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sat - Sun:</td>
+                                <td>8am - 1am</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-1 text-center">
+                    <h5 class="mb-3 text-dark">Quick Link</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1">
+                            <a href="{% url 'home' %}" style="color: #4f4f4f;">Home</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="{% url 'products' %}" style="color: #4f4f4f;">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#!" style="color: #4f4f4f;">Workshops</a>
+                        </li>
+                        <li>
+                            <a href="#!" style="color: #4f4f4f;">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#!" style="color: #4f4f4f;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-1 text-center">
+                    <h5 class="mb-3 text-dark">Location</h5>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.715165904357!2d6.9205557!3d50.9485883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf2515d4710301%3A0x693bbc6b49e50701!2sT%C3%B6pferwerkstatt!5e0!3m2!1sen!2s!4v1621703896952!5m2!1sen!2s"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <section class="text-center mb-5">
-                    <a href="" class="mainnav-clr me-4">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="" class=" me-4">
-                        <i class="mainnav-clr fab fa-twitter"></i>
-                    </a>
-                    <a href="" class=" me-4">
-                        <i class="mainnav-clr fab fa-google"></i>
-                    </a>
-                    <a href="" class=" me-4">
-                        <i class="mainnav-clr fab fa-instagram"></i>
-                    </a>
-                    <a href="" class=" me-4">
-                        <i class="mainnav-clr fab fa-linkedin"></i>
-                    </a>
-                    <a href="" class=" me-4">
-                        <i class="mainnav-clr fab fa-github"></i>
-                    </a>
-                </section>
             </div>
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2023 Copyright:
-                <a class="text-dark" href="">ClayCafe.com</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
+            <section class="text-center mb-1">
+                <a href="" class="mainnav-clr me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class=" me-4">
+                    <i class="mainnav-clr fab fa-twitter"></i>
+                </a>
+                <a href="" class=" me-4">
+                    <i class="mainnav-clr fab fa-google"></i>
+                </a>
+                <a href="" class=" me-4">
+                    <i class="mainnav-clr fab fa-instagram"></i>
+                </a>
+                <a href="" class=" me-4">
+                    <i class="mainnav-clr fab fa-linkedin"></i>
+                </a>
+                <a href="" class=" me-4">
+                    <i class="mainnav-clr fab fa-github"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="">ClayCafe.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
     {% endblock %}
 
     {% block corejs %}
@@ -245,14 +251,14 @@
         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar-scroll").style.top = "0";
-        } else {
-            document.getElementById("navbar-scroll").style.top = "-165px";
-        }
-        prevScrollpos = currentScrollPos;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar-scroll").style.top = "0";
+            } else {
+                document.getElementById("navbar-scroll").style.top = "-165px";
+            }
+            prevScrollpos = currentScrollPos;
         }
     </script>
     {% endblock %}
