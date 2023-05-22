@@ -142,6 +142,7 @@
   + Add Workshop app
     - Set up models
     - Set up view/form/template
+Add to README.md file
 
 
 * Checkout- Sprint 3 - 26/05/2022 - 31/05/2023 (Finished on ??/05/2023)
@@ -158,6 +159,7 @@
    - Create HTML
    - Set up Email functionality
    - Add link to footer
+  Add to README.md file
 
 * Profile- Sprint 4 - 1/06/2022 - 5/06/2023 (Finished on ??/06/2023)
 
@@ -172,11 +174,12 @@
         - Set up admin
         - Set up views
         - Set up templates
+ Add to README.md file
 
 * KitchenSink- Sprint 5 - 6/06/2022 - 9/06/2023 (Finished on 09/06/2023)
 
     - Finish the uncomplete fuctionality from other sprints
-    - Depending on the time left add new functionality.
+    - Depending on the time left add could have have functionality.
     - SEO and Webmarketing
     - README/TESTING
 
