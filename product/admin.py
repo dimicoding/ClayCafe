@@ -22,7 +22,7 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
         'category',
     )
-    ordering = ('price',)
+    ordering = ('-id',)
 
 
 

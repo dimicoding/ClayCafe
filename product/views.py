@@ -5,7 +5,7 @@ from .models import Category, Product
 
 def all_products(request):
 
-    products = Product.objects.all()
+    products = Product.objects.all().order_by('-id')
 
     context = {
         'products': products,

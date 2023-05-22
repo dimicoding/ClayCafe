@@ -221,9 +221,15 @@ a {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
+    .container {
     max-width: 100%;
     }
+    .responsive-img{
+        height: 430px;
+
+    }
+  
+
 }
 
 /* fixed top navbar only on medium and up */
