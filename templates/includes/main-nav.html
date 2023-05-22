@@ -19,7 +19,7 @@
                     <hr class="dropdown-divider">
                 </li>
                 {% for item in cat_list %}
-                <li><a class="dropdown-item" href="#">{{ item }}</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}">{{ item }}</a></li>
                 {% endfor%}
             </ul>
         </li>

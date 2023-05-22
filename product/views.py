@@ -9,8 +9,10 @@ def all_products(request):
     """ Renders the view with all off the products available"""
 
     products = Product.objects.all().order_by('-id')
+    query = None
 
     if request.GET:
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
