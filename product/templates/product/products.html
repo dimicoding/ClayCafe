@@ -13,8 +13,14 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center mt-3">
+        <div class="col text-center mt-2 mb-3">
             <h2 class="logo-font">Products</h2>
+            <div class="mt-3">
+                <a class="category-btn rounded-5 p-1" href="{% url 'products' %}?category=Vases">Vases</a>
+                <a class="category-btn rounded-5 p-1" href="{% url 'products' %}?category=Cups">Cups</a>
+                <a class="category-btn rounded-5 p-1"
+                    href="{% url 'products' %}?category={{ 'Plates & Bowls'|urlencode }}">Plates & Bowls</a>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -22,33 +28,51 @@
             <div class="row mt-1 mb-2"></div>
             <div class="row">
                 {% for product in products %}
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
-                        <div class="card h-100 border-0">
-                            {% if product.image %}
-                            <a href="{% url 'product_detail' product.id %}">
-                                <img width="500" height="330" class="card-img-top rounded responsive-img" src="{{ product.image.url }}" alt="{{ product.name }}" style="object-fit:cover; object-position: center;" >
-                                <small class="text-center"><a class="cat-font" href="#">{{product.category}} <i class="fa-solid fa-tags" style="color: #537188;"></i></a></small>            
-                            </a>
-                            {% endif %}
-                            <div class="card-body pb-0">
-                                <p class="lead mb-0 text-left font-weight-bold">{{ product.price }}€</p>
-                                
-                            </div>
-                            <div class="card-footer bg-white pt-0 border-0 text-left">
-                                <div class="row">
-                                    <div class="col mb-5">
-                                        <p class="mb-0 mt-2"><strong>{{ product.name }}</strong></p>
-                                        <p class="">{{  product.description|slice:":80" }}(...)</p>
-                                        {% if product.rating %}
-                                            <small class="text-muted"><i class="fas fa-star mr-1" style="color: #CBB279;"></i>{{ product.rating }} / 5</small>
-                                        {% else %}
-                                            <small class="text-muted">No Rating</small>
-                                        {% endif %}
-                                    </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <div class="card h-100 border-0">
+                        {% if product.image %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img width="500" height="330" class="card-img-top rounded responsive-img"
+                                src="{{ product.image.url }}" alt="{{ product.name }}"
+                                style="object-fit:cover; object-position: center;">
+                            <small class="text-center">
+                                <!-- logic to display a link to a category of the product -->
+                                {% if product.category == 'Vases' %}
+                                <a class="cat-font"
+                                    href="{% url 'products' %}?category=Vases">{{ product.category }}</a>
+                                <i class="fa-solid fa-tags" style="color: #537188;"></i>
+                                {% elif product.category == 'Cups' %}
+                                <a class="cat-font" href="{% url 'products' %}?category=Cups">{{ product.category }}</a>
+                                <i class="fa-solid fa-tags" style="color: #537188;"></i>
+                                {% else %}
+                                <a class="cat-font"
+                                    href="{% url 'products' %}?category={{ product.category|urlencode }}">
+                                    {{ product.category }}</a>
+                                <i class="fa-solid fa-tags" style="color: #537188;"></i>
+                                {% endif %}
+                            </small>
+                        </a>
+                        {% endif %}
+                        <div class="card-body pb-0">
+                            <p class="lead mb-0 text-left font-weight-bold">{{ product.price }}€</p>
+
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">
+                                <div class="col mb-5">
+                                    <p class="mb-0 mt-2"><strong>{{ product.name }}</strong></p>
+                                    <p class="">{{  product.description|slice:":80" }}(...)</p>
+                                    {% if product.rating %}
+                                    <small class="text-muted"><i class="fas fa-star mr-1"
+                                            style="color: #CBB279;"></i>{{ product.rating }} / 5</small>
+                                    {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
                 {% endfor %}
             </div>
         </div>

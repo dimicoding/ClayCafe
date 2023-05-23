@@ -136,6 +136,19 @@ body {
     color: #fff;
     border: 2px solid #EEEEEE;
 }
+.category-btn {
+    background: -moz-linear-gradient(top, #537188 0%, #CDD6DD 100%);
+    background: -webkit-linear-gradient(top, #537188 0%, #CDD6DD 100%);
+    background: linear-gradient(to bottom, #537188 0%, #CDD6DD 100%);
+    min-width: 130px;
+    color: #fff;
+    display: inline-block;
+    border: 2px solid #EEEEEE;
+}
+.category-btn:hover{
+    background: #537188;
+    font-weight: 600;
+}
 
 .btn-black {
     background: black;
