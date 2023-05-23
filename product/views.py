@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Category, Product
+from urllib.parse import unquote
 # Create your views here.
 
 
@@ -10,8 +11,16 @@ def all_products(request):
 
     products = Product.objects.all().order_by('-id')
     query = None
+    categories = None
 
     if request.GET:
+
+        # python documentation for urllib.parse and unquote https://docs.python.org/3/library/urllib.parse.html
+        if 'category' in request.GET:
+            encoded_categories = request.GET.getlist('category')
+            categories = [unquote(category) for category in encoded_categories]
+            products = products.filter(category__cat_name__in=categories)
+            categories = Category.objects.filter(cat_name__in=categories)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -26,9 +35,10 @@ def all_products(request):
     context = {
         'products': products,
         'search_term': query,
+        'current_categories': categories,
     }
 
-    return render(request, 'product/product.html', context)
+    return render(request, 'product/products.html', context)
 
 
 def product_detail(request, product_id):
@@ -41,3 +51,4 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'product/product_detail.html', context)
+

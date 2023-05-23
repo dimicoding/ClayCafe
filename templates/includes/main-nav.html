@@ -7,7 +7,6 @@
             </a>
         </li>
 
-        {% if cat_list %}
         <li class="nav-item dropdown">
             <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -18,12 +17,13 @@
                 <li>
                     <hr class="dropdown-divider">
                 </li>
-                {% for item in cat_list %}
-                <li><a class="dropdown-item" href="{% url 'products' %}">{{ item }}</a></li>
-                {% endfor%}
+                <li>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Vases">Vases</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Cups">Cups</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category={{ 'Plates & Bowls'|urlencode }}">Plates & Bowls</a>
+                </li>
             </ul>
         </li>
-        {% endif %}
 
         <li class="nav-item dropdown">
             <a class="hover-underline-animation font-weight-bold nav-link mainnav-clr mx-4" href="#" id=""
