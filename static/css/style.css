@@ -95,6 +95,9 @@ body {
     color: #537188;
     text-transform: uppercase;
 }
+.more{
+    color: #537188;
+}
 
 /* __________________style text/img hero img__________________________ */
 
@@ -116,10 +119,6 @@ body {
 }
 
   /* __________''__________________ */
-
-.font-weight-bold {
-    font-weight: 600!important;
-}
 
 
 .logo-font {
@@ -177,6 +176,9 @@ a {
 }
 .custom-m{
     margin: 20px 0;
+    text-align: justify;
+}
+.custom-m-2{
     text-align: justify;
 }
 /* Allauth form formatting */

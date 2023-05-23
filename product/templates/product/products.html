@@ -71,7 +71,7 @@
                             <div class="row">
                                 <div class="col mb-5">
                                     <p class="mb-0 mt-2"><strong><a class="mainnav-clr" href="{% url 'product_detail' product.id %}">{{ product.name }}</a></strong></p>
-                                    <p class="">{{  product.description|slice:":80" }}...(<a class="small cat-font" href="{% url 'product_detail' product.id %}">more</a>)</p>
+                                    <p class="custom-m-2">{{  product.description|slice:":120" }}...(<a class="small more" href="{% url 'product_detail' product.id %}">more</a>)</p>
                                     {% if product.rating %}
                                     <small class="text-muted"><i class="fas fa-star mr-1"
                                             style="color: #CBB279;"></i>{{ product.rating }} / 5</small>
