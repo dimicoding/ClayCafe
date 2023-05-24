@@ -26,17 +26,29 @@
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mb-2">
-                <div class="dropdown text-end mb-3">
-                    <button class="btn btn-secondary dropdown-toggle px-3 mt-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-sort"></i> sort
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc"><i class="fa-solid fa-filter"></i> By Price</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc"><i class="fa-solid fa-filter"></i> By Rating</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
-                    </ul>
-                </div>
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <p class="text-muted mt-2">
+                            {% if search_term or current_categories or current_sorting != 'None_None' %}
+                                <span class="small"><a class="more" href="{% url 'products' %}"><i class="fa-solid fa-angles-left"></i> Products Home</a> | </span>
+                            {% endif %}
+                            {{ products|length }} Clay Crafts{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                        </p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle px-3 mt-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-sort"></i> Sort
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc"><i class="fa-solid fa-filter"></i> By Price</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc"><i class="fa-solid fa-filter"></i> By Rating</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                
                 {% for product in products %}
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <div class="card h-100 border-0">
