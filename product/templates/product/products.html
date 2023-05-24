@@ -24,11 +24,11 @@
         </div>
     </div>
     <div class="row">
-        <div class="product-container col-10 offset-1">
+        <div class="">
             <div class="row mb-2">
                 <div class="row justify-content-between">
                     <div class="col-auto">
-                        <p class="text-muted mt-2">
+                        <p class="text-muted my-3">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
                                 <span class="small"><a class="more" href="{% url 'products' %}"><i class="fa-solid fa-angles-left"></i> Products Home</a> | </span>
                             {% endif %}
@@ -37,7 +37,7 @@
                     </div>
                     <div class="col-auto">
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle px-3 mt-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle px-3 my-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-sort"></i> Sort
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
