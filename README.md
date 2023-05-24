@@ -186,6 +186,8 @@ Add to README.md file
 
 # Credits
 
+#### Color gradient for the product category buttons:
+https://colorate.azurewebsites.net/
 
 
 
