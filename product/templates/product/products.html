@@ -30,7 +30,7 @@
                     <div class="col-auto">
                         <p class="text-muted my-3">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a class="more" href="{% url 'products' %}"><i class="fa-solid fa-angles-left"></i> Products Home</a> | </span>
+                                <span class="small"><a class="more" href="{% url 'products' %}"><i class="fas fa-chevron-left"></i> Products Home</a> | </span>
                             {% endif %}
                             {{ products|length }} Clay Crafts{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
