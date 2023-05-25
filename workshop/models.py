@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 
 class Workshop(models.Model):
     title = models.CharField(max_length=200)
+    image = models.ImageField(null=True, blank=True)
     description = models.TextField(blank=True)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()

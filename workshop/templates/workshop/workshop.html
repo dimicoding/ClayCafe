@@ -8,6 +8,25 @@
 
 {% block content %}
 
-<h1>hi</h1>
+<div class="row">
+    {% for details in workshop_details %}
+    <div class="col-md-4 col-xxl-3 d-flex justify-content-center align-items-center custom-m">
+        <div class="image-container">
+            <a href="{{ details.image.url }}" target="_blank">
+                <img class="card-img-top img-fluid rounded" style="height: 300px; width: 330px;" src="{{ details.image.url }}"
+                    alt="{{ details.title }}">
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-xxl-3 align-self-start custom-m">
+        
+    </div>
+    <div class="col-md-3 col-xxl-3"></div>
+    <div class="col-md-2 col-xxl-2">
+       
+    </div>
+</div>
+{% endfor %}
+
 
 {% endblock %}

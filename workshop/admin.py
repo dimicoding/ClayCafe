@@ -8,6 +8,7 @@ class WorkshopAdmin(admin.ModelAdmin):
     """
     list_display = (
         'title',
+        'image',
         'description',
         'start_time',
         'end_time',
