@@ -21,6 +21,36 @@
     width: 1.5rem;
 }
 
+/* _________styling the quantity input___________  */
+
+.minus {
+    left: 0px;
+    bottom: 2px;
+    position: absolute;
+}
+
+.plus {
+    left: 80px;
+    bottom: 2px;
+    position: absolute;
+}
+
+.qty_input::-webkit-inner-spin-button,
+.qty_input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.qty_input {
+    -moz-appearance: textfield;
+}
+.qty-border{
+    border: 2px solid #EEEEEE;
+}
+.qty-border:hover{
+    border: 2px solid #537188;
+}
+
+/* ___________--quantity input styled! __________*/
 
 html {
     scroll-behavior: smooth;
