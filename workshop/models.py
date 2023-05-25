@@ -1,4 +1,6 @@
 from django.db import models
+from datetime import datetime
+from django.contrib.auth.models import User
 
 
 class Workshop(models.Model):
@@ -15,7 +17,7 @@ class Workshop(models.Model):
 
 class Booking(models.Model):
     workshop_id = models.ForeignKey('Workshop', null=True, blank=True, on_delete=models.SET_NULL)
-    user_id = user = models.ForeignKey(User, null=True, blank=True,  on_delete=models.CASCADE)
+    user_id = models.ForeignKey(User, null=True, blank=True,  on_delete=models.CASCADE)
     created_on = models.DateTimeField()
     content = models.TextField(blank=True)
 
