@@ -32,9 +32,13 @@
                 time to embark on a remarkable journey of self-expression, as you immerse yourself in the therapeutic art of
                 pottery. Whether you're a curious beginner or an experienced potter seeking to refine your skills, this
                 workshop is designed to inspire and ignite your creative spark.</p>
+            
+            
+            <a href="{% url 'workshop_book' details.id %}">View Details</a>
+        {% endfor %}
         </div>
     </div>
-{% endfor %}
 
+</div>
 
 {% endblock %}

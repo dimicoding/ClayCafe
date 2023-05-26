@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 
 
 class Workshop(models.Model):
+    id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=200)
     image = models.ImageField(null=True, blank=True)
     description = models.TextField(blank=True)
@@ -14,9 +15,10 @@ class Workshop(models.Model):
     places = models.PositiveIntegerField()
     
     def __str__(self):
-        return self.title
+        return str(self.id)
 
 class Booking(models.Model):
+    id = models.AutoField(primary_key=True)
     workshop_id = models.ForeignKey('Workshop', null=True, blank=True, on_delete=models.SET_NULL)
     user_id = models.ForeignKey(User, null=True, blank=True,  on_delete=models.CASCADE)
     created_on = models.DateTimeField()
