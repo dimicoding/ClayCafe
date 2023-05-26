@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView
 from django.utils import timezone
 from .models import Workshop, Booking
@@ -27,10 +27,18 @@ def workshop_book(request, workshop_id):
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
-            booking = form.save(commit=False)
-            booking.workshop_id = workshop
-            booking.created_on = timezone.now()
+            full_name = form.cleaned_data['full_name']
+            email = form.cleaned_data['email']
+            phone_number = form.cleaned_data['phone_number']
+
+            booking = Booking(workshop_id=workshop, created_on=timezone.now())
             booking.save()
+
+            booking.full_name = full_name
+            booking.email = email
+            booking.phone_number = phone_number
+            booking.save()
+
             return redirect('workshops_booked')
 
     else:
