@@ -31,7 +31,7 @@
                 <p><strong>From: </strong>{{ details.start_time.time }} <strong>to </strong>{{ details.end_time.time }}</p>
                 <p><strong>Price: </strong>{{details.price}}€ <small>(material included)</small></p>
                 <p><strong>Available Places: </strong>{{details.places }} people</p>
-                <button class="p-2 mt-3 shop-now-button rounded-5"><a class="cat-font" href="">Place Reservation</a></button>
+                <button class="p-2 mt-3 shop-now-button rounded-5"><a class="cat-font" href="#reservation">Place Reservation</a></button>
             </div>
         </div>
     </div>
@@ -47,10 +47,11 @@
 </div>
 <br>
 <br>
-<div class="container">
+<div class="container form-bckg">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <form method="POST" action="">
+            <h3 class="text-center my-5" id="reservation">Place Reservation</h3>
+            <form method="POST" action="" class="d-flex flex-column align-items-center">
                 {% csrf_token %}
                 <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Full Name:" required>
 
@@ -58,7 +59,9 @@
 
                 <input type="text" class="form-control mt-3" id="phone_number" name="phone_number" placeholder="Phone Number:" required>
 
-                <button class="p-2 mt-3 shop-now-button rounded-5 mt-3" type="submit"><strong class="cat-font">Book Now!</strong></button>
+                <input type="number" min="1" max="5" class="form-control mt-3" id="places" name="places" placeholder="Places:" required>
+
+                <button class="p-2 mt-3 shop-now-button rounded-5 my-3 text-center" type="submit"><strong class="cat-font">Book Now!</strong></button>
             </form>
         </div>
     </div>

@@ -30,6 +30,7 @@ def workshop_book(request, workshop_id):
             full_name = form.cleaned_data['full_name']
             email = form.cleaned_data['email']
             phone_number = form.cleaned_data['phone_number']
+            places = form.cleaned_data['places']
 
             booking = Booking(workshop_id=workshop, created_on=timezone.now())
             booking.save()
@@ -37,6 +38,7 @@ def workshop_book(request, workshop_id):
             booking.full_name = full_name
             booking.email = email
             booking.phone_number = phone_number
+            booking.places = places
             booking.save()
 
             return redirect('workshops_booked')
