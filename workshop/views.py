@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404
+from django.views.generic import ListView
 from .models import Workshop, Booking
 
 
@@ -19,9 +20,13 @@ def workshop(request):
 def workshop_book(request, workshop_id):
 
     workshop = get_object_or_404(Workshop, id=workshop_id)
+    workshop_details = Workshop.objects.all()
 
     context = {
         'workshop': workshop,
+        'workshop_details': workshop_details,
     }
 
     return render(request, 'workshop/workshop-detail.html', context)
+
+
