@@ -129,7 +129,7 @@
     - Add to README.md file
 
 
-* Product- Sprint 2 - 21/05/2023 - 25/05/2023 (Finished on ??/05/2023)
+* Product- Sprint 2 - 21/05/2023 - 25/05/2023 (Finished on 26/05/2023)
 
   + Add Product app
     - Set up models
@@ -142,11 +142,13 @@
   + Add Workshop app
     - Set up models
     - Set up view/form/template
+    ( Workshop app wasn't totaly complete, but since it's a could have priority for the e-commerce project I'm happy with the progress made in one day working on it. To fully complete the desired end product the user should be able to submit a form for a given workshop and the workshop in question would appear on the main navbar workshop template. The user would be able to delete the workshop from the list.)
 Add to README.md file
 
 
 * Checkout- Sprint 3 - 26/05/2022 - 31/05/2023 (Finished on ??/05/2023)
 
+  + Add Toasts
   + Add Checkout app
     - Set up models
     - Set up admin
@@ -168,7 +170,6 @@ Add to README.md file
         - Set up admin
         - Set up views
         - Set up templates
-    + Add Toasts
     + Add Blog app
         - Set up Models
         - Set up admin
