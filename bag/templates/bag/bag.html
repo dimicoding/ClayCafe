@@ -93,7 +93,12 @@
 
 
     {% else %}
-    <p class="lead mb-5">Your bag is empty.</p>
+    <div class="row text-center">
+        <div class="col">
+            <p class="lead">Your bag is empty.</p>
+            <img class="img-fluid" src="{{ MEDIA_URL }}paper-bag-5425691_1920.png" alt="empty bag">
+        </div>
+    </div>
     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
         <span class="icon">
             <i class="fas fa-chevron-left"></i>

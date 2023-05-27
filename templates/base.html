@@ -240,7 +240,9 @@
 
     {% block postloadjs %}
     <script type="text/javascript">
+        $(document).ready(function () {
         $('.toast').toast('show');
+        })
     </script>
 
     <script>
