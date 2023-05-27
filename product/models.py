@@ -12,6 +12,7 @@ class Category(models.Model):
         return self.cat_name
 
 class Product(models.Model):
+    sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=200)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
