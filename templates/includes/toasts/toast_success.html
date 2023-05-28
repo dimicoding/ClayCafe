@@ -34,16 +34,17 @@
                         <span class="float-right">${{ total|floatformat:2 }}</span>
                     </p></strong>
                     {% if free_delivery_delta > 0 %}
-                        <p class="mb-0 p-2 bg-warning shadow-sm text-black text-center">
+                        <p class="mb-0 p-2 shadow-sm text-black text-center">
                             Add <strong>{{ free_delivery_delta }}€</strong> to your cart to qualify for free shipping!
                         </p>
                     {% endif %}
-                    <a href="{% url 'view_bag' %}" class="btn btn-black">
-                        <span class="text-uppercase">Go To Secure Checkout</span>
-                        <span class="icon">
-                            <i class="fas fa-lock"></i>
-                        </span>
-                    </a>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="{% url 'view_bag' %}" class="align-items-center">
+                            <button class="p-2 mt-3 shop-now-button rounded-5 my-3 text-center" type="submit">
+                                <strong class="text-black text-uppercase">Go To Secure Checkout  <i class="fas fa-lock"></i></strong></i>  
+                            </button>
+                        </a>
+                    </div>                    
                 </div>
             </div>
         {% endif %}
