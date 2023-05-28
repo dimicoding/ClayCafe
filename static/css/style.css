@@ -291,6 +291,11 @@ a {
     position: absolute;
     right: 15px;
 }
+.bag-notification-wrapper {
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 /* -------------------------------- Media Queries */
 
