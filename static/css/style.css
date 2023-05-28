@@ -281,8 +281,15 @@ a {
     overflow: visible;
 }
 
-.toast-capper {
-    height: 2px;
+.bckg-success{
+    background: #EDF3EC;
+}
+.bckg-danger{
+    background: #F3B1B1;
+}
+.btn-position{
+    position: absolute;
+    right: 15px;
 }
 
 /* -------------------------------- Media Queries */
