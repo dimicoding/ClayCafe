@@ -107,12 +107,13 @@
         </span>
         <span class="text-uppercase">Keep Shopping</span>
     </a>
-    <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-        <span class="text-uppercase">Secure Checkout</span>
-        <span class="icon">
-            <i class="fas fa-lock"></i>
-        </span>
-    </a>
+    <div class="d-flex justify-content-center align-items-center">
+        <a href="{% url 'checkout' %}" class="align-items-center">
+            <button class="p-2 mt-3 shop-now-button rounded-5 my-5 text-center" type="submit">
+                <strong class="text-black text-uppercase"> To Secure Checkout  <i class="fas fa-lock"></i></strong></i>  
+            </button>
+        </a>
+    </div> 
 </div>
 {% endblock %}
 

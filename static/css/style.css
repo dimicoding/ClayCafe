@@ -168,6 +168,18 @@ body {
     color: #fff;
     border: 2px solid #EEEEEE;
 }
+.shop-now-button2 {
+    background: rgba(83, 113, 136, 0.6);
+    min-width: 260px;
+    color: #fff;
+    border: 2px solid #EEEEEE;
+}
+.shop-now-button2:hover {
+    background: rgba(83, 113, 136, 0.4);
+    min-width: 260px;
+    color: #fff;
+    border: 2px solid #EEEEEE;
+}
 .category-btn {
     background: -moz-linear-gradient(top, #537188 0%, #A7B7C2 100%);
     background: -webkit-linear-gradient(top, #537188 0%, #A7B7C2 100%);
