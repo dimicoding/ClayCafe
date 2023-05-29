@@ -41,8 +41,16 @@
                 {% endif %}
             </small>
             <p class="my-2"><strong>{{ item.product.name }}</strong></p>
+            {% if item.product.rating %}
+            <small class="text-muted"><i class="fas fa-star mr-1 mt-1"
+                    style="color: #CBB279;"></i>{{ item.product.rating }} /
+                5</small>
+            {% else %}
+            <small class="text-muted">No Rating</small>
+            {% endif %}
+            <br>
             <a href="{% url 'product_detail' item.product.id %}">
-                <i class="fa-solid fa-circle-info fa-xl my-3 more"></i>
+                <i class="fa-solid fa-circle-info fa-xl my-5 more"></i>
             </a>
             <form class="form update-form my-3" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                 {% csrf_token %}
@@ -69,17 +77,10 @@
             </form>
             <a class="update-link text-info"><small>Update</small></a>
             <br>
-            {% if item.product.rating %}
-            <small class="text-muted"><i class="fas fa-star mr-1 mt-3"
-                    style="color: #CBB279;"></i>{{ item.product.rating }} /
-                5</small>
-            {% else %}
-            <small class="text-muted">No Rating</small>
-            {% endif %}
         </div>
         <div class="col-md-3 col-xxl-3"></div>
         <div class="col-md-2 col-xxl-2 d-flex flex-column">
-            <a class="remove-item text-danger align-self-start mt-3" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+            <a class="remove-item text-danger align-self-start mt-4" id="remove_{{ item.item_id }}"><small>Remove</small></a>
             <div class="mt-auto">
                 <p class="text-finish mb-0"><strong>Sub Total:</strong></p>
                 <p class="lead font-weight-bold mb-5">{{ item.product.price| calc_subtotal:item.quantity }}€</p>

@@ -1,44 +1,174 @@
-{% extends "base.html" %} {% load static %}
+{% extends "base.html" %}
+{% load static %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
- {% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col-7 col-md-6 my-auto"></div>
-    </div>
-</div>
-{% endblock %} {% block content %}
-
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h2 class="logo-font mb-4">Thank You</h2>
-            <hr>
-            <p class="text-black">Your order information is below. A confirmation email will be sent to
-                <strong>{{ order.email }}</strong>.</p>
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-12 col-lg-7">
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-lg-7 text-right">
-            <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
-                <span class="icon mr-2">
-                    <i class="fas fa-gifts"></i>
-                </span>
-                <span class="text-uppercase">Now check out the latest deals!</span>
-            </a>
-        </div>
-    </div>
-</div>
-
 {% endblock %}
 
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="logo-font mb-4 text-center">Order Confirmation</h2>
+                <p class="text-black text-center">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center my-3">
+            <div class="col-xl-8 col-xxl-8">
+                <div class="row justify-content-center my-3">
+                    <div class="col text-center">
+                        <strong class="text-muted">Order Info:</strong>
+                    </div>
+                </div>
+                <div class="card success-container">
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">Reference Number</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-xxl-6 text-center">
+                            <p class="mb-0">{{ order.order_number }}</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">Order Date</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0">{{ order.date }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-3">
+                    <div class="col text-center">
+                        <strong class="text-muted">Order Details:</strong>
+                    </div>
+                </div>
+
+                <div class="card success-container">
+                {% for item in order.lineitems.all %}
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">{{ item.product.name }}</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0">{{ item.quantity }} Units for {{ item.product.price }}€ each</p>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+
+                <div class="row justify-content-center my-3">
+                    <div class="col text-center">
+                        <strong class="text-muted">Delivering To: </strong>
+                    </div>
+                </div>
+
+                <div class="card success-container">
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">Full Name</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0">{{ order.full_name }}</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">Address 1</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0">{{ order.address1 }}</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">Address 2</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0">{{ order.address2 }}</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">City</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0">{{ order.city }}</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">Country</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0">Germany</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-3">
+                    <div class="col text-center">
+                        <strong class="text-muted">Billing Info: </strong>
+                    </div>
+                </div>
+
+                <div class="card success-container">
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">Order Total</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0">{{ order.order_total }}€</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">Delivery</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0">{{ order.delivery_cost }}€</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-1">
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0 text-black font-weight-bold">Grand Total</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-xxl-6 text-center">
+                            <p class="mb-0">{{ order.grand_total }}€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+			<div class="col-12 col-lg-7 text-right">
+				<a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
+					<span class="icon mr-2">
+						<i class="fas fa-gifts"></i>
+					</span>
+					<span class="text-uppercase">Now check out the latest deals!</span>
+				</a>
+			</div>
+		</div>
+    </div>
+    
+{% endblock %}
