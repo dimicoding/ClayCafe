@@ -28,9 +28,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
-ALLOWED_HOSTS = ["localhost","8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu97.gitpod.io"]
+ALLOWED_HOSTS = ["localhost","8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu97.gitpod.io", "8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu98.gitpod.io"]
 
 
 # Application definition
@@ -128,6 +128,10 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.parse('')
+#  }
 
 
 # Password validation
