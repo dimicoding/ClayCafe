@@ -69,7 +69,7 @@
 
 ###	EPIC: Sorting and searching through products.
 
-13.	As a buyer, I want to sort the list of available products based on features, popularity, price, and date added, so I can easily identify the products in which I am interested.
+13.	As a buyer, I want to sort the list of available products based on price, and rating , so I can easily identify the products in which I am interested.
 
 14.	As a buyer, I want to effortlessly search and browse through categorized product lists to find items that I may want to purchase.
 
