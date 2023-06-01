@@ -161,11 +161,19 @@
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-            <a href="{% url 'home' %}" class="align-items-center">
+            {% if from_profile %}
+            <a href="{% url 'profile' %}" class="align-items-center">
                 <button class="p-2 shop-now-button2 rounded-5 my-5 text-center" type="submit">
-                    <strong class="text-black text-uppercase"> Go Home  <i class="fa-solid fa-house"></i></strong></i>  
+                    <strong class="text-black text-uppercase"> Back to profile  <i class="fa-solid fa-angle-left"></i></strong></i>  
                 </button>
             </a>
+            {% else %}
+                <a href="{% url 'home' %}" class="align-items-center">
+                    <button class="p-2 shop-now-button2 rounded-5 my-5 text-center" type="submit">
+                        <strong class="text-black text-uppercase"> Go Home  <i class="fa-solid fa-house"></i></strong></i>  
+                    </button>
+                </a>
+            {% endif %}
         </div> 
     </div>
     
