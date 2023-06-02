@@ -1,1 +1,1 @@
-web: gunicorn claycafe.wsgi
+web: gunicorn claycafe.wsgi:application

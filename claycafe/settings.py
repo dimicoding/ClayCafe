@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost","8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu97.gitpod.io", "8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu98.gitpod.io"]
+ALLOWED_HOSTS = ["claycafe.herokuapp.com", "localhost", "8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu97.gitpod.io", "8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu98.gitpod.io"]
 
 
 # Application definition
@@ -123,16 +123,18 @@ WSGI_APPLICATION = 'claycafe.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
-# DATABASES = {
-#     'default': dj_database_url.parse('')
-#  }
 
 
 # Password validation
