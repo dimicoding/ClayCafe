@@ -45,6 +45,12 @@
             {% else %}
             <small class="text-muted">No Rating</small>
             {% endif %}
+            {% if request.user.is_superuser %}
+                <small class="ml-3">
+                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                </small>
+            {% endif %}
 
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                 {% csrf_token %}
@@ -76,12 +82,6 @@
                         <button type="submit" class="form-control rounded-5 mt-5 category-btn p-2"> Add to Bag  <i class="fas fa-shopping-bag fa-lg"></i></button>
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                    {% if request.user.is_superuser %}
-                        <small class="ml-3">
-                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                        </small>
-                    {% endif %}
                 </div>
             </form>
         </div>
