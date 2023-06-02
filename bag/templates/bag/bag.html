@@ -19,10 +19,17 @@
     <div class="row">
         <div class="col-md-4 col-xxl-3 d-flex justify-content-center align-items-center custom-m">
             <div class="image-container">
+                {% if item.product.image %}
                 <a href="{{ item.product.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid rounded" style="height: 300px; width: 330px;" src="{{ item.product.image.url }}"
                         alt="{{ item.product.name }}">
                 </a>
+                {% else %}
+                <a href="{{ MEDIA_URL }}noimage.png" target="_blank">
+                    <img class="card-img-top img-fluid rounded" style="height: 300px; width: 330px;" src="{{ MEDIA_URL }}noimage.png"
+                        alt="{{ item.product.name }}">
+                </a>
+                {% endif %}
             </div>
         </div>
         <div class="col-md-3 col-xxl-3 align-self-start custom-m">
