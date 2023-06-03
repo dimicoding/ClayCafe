@@ -15,7 +15,7 @@ class HomeView(ListView):
 
     model = Blog
     template_name = "blog/blog.html"
-    ordering = ["-created_blog"]
+    ordering = ["created_blog"]
 
     # Dropdown menu list
     # def get_context_data(self, *args, **kwargs):

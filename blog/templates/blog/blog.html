@@ -9,16 +9,16 @@
 <div class="container">
     <div class="row">
         <div class="col text-center">
-            <h4 class="logo-font my-3">Blog</h4>
+            <h4 class="logo-font mt-3">Blog</h4>
         </div>
     </div>
     <div class="row row-cols-1 row-cols-md-2 g-4">
         {% for blog in object_list %}
-            <div class="col-12 col-md-6 offset-md-2">
+            <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
                 <div class="card h-100 border-0">
                     {% if blog.featured_image %}
                     <a href="">
-                        <img class="card-img-top rounded responsive-img" width="500" height="330"
+                        <img class="card-img-top rounded responsive-img my-3" width="500" height="330"
                             src="{{ blog.featured_image.url }}" alt="{{ blog.title }}"
                             style="object-fit:cover; object-position: center;">
                     </a>
@@ -28,7 +28,6 @@
                             <div class="col mb-5">
                                 <p class="mb-0 mt-2"><strong><a class="mainnav-clr" href="">{{ blog.title }}</a></strong></p>
                                 <p class="custom-m-2">{{  blog.content|slice:":120"|safe }}...(<a class="small more" href="">more</a>)</p>
-                                
                             </div>
                         </div>
                     </div>
