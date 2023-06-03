@@ -12,10 +12,30 @@
             <h4 class="logo-font my-3">Blog</h4>
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-6 mt-3">
-           <p>hi</p>
-        </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for blog in object_list %}
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                <div class="card h-100 border-0">
+                    {% if blog.featured_image %}
+                    <a href="">
+                        <img class="img-fluid rounded"
+                            src="{{ blog.featured_image.url }}" alt="{{ blog.title }}"
+                            style="object-fit:cover; object-position: center;">
+                    </a>
+                    {% endif %}
+                    <div class="card-footer bg-white pt-0 border-0 text-left">
+                        <div class="row">
+                            <div class="col mb-5">
+                                <p class="mb-0 mt-2"><strong><a class="mainnav-clr" href="">{{ blog.title }}</a></strong></p>
+                                <p class="custom-m-2">{{  blog.content|slice:":120"|safe }}...(<a class="small more" href="">more</a>)</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
     </div>
 </div>
 
