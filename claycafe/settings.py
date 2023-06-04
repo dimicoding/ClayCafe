@@ -134,10 +134,6 @@ DATABASES = {
     }
 }
 
-DATABASES = {
-    'default': dj_database_url.parse('postgres://krcvvbys:G5B-d1NkZJi-uX51svFccdpY96H4FYX-@horton.db.elephantsql.com/krcvvbys')
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
