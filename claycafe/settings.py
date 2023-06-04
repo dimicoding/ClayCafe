@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ["claycafe.herokuapp.com", "localhost", "8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu97.gitpod.io", "8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu98.gitpod.io"]
+ALLOWED_HOSTS = ["claycafe.herokuapp.com", "localhost", "8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu98.gitpod.io","8000-dimicoding-claycafe-3w5yomta35f.ws-eu98.gitpod.io"]
 
 
 # Application definition
@@ -177,6 +177,12 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
+
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'claycafe'
     AWS_S3_REGION_NAME = 'eu-central-1'
