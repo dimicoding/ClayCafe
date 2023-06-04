@@ -9,27 +9,55 @@
 <div class="container">
     <div class="row">
         <div class="col text-center">
-            <h4 class="logo-font my-3">Blog</h4>
+            <h4 class="logo-font my-4">Blog</h4>
         </div>
     </div>
     <div class="row row-cols-1 row-cols-md-2 g-4">
         {% for blog in object_list %}
-            <div class="col-12 col-md-6 offset-md-2">
+            <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 mt-0">
                 <div class="card h-100 border-0">
                     {% if blog.featured_image %}
-                    <a href="">
-                        <img class="card-img-top rounded responsive-img" width="500" height="330"
+                    <a href="{% url 'the_blog' blog.pk %}">
+                        <img class="card-img-top rounded responsive-img mt-3" width="500" height="330"
                             src="{{ blog.featured_image.url }}" alt="{{ blog.title }}"
                             style="object-fit:cover; object-position: center;">
                     </a>
                     {% endif %}
                     <div class="card-footer bg-white pt-0 border-0 text-left">
                         <div class="row">
-                            <div class="col mb-5">
-                                <p class="mb-0 mt-2"><strong><a class="mainnav-clr" href="">{{ blog.title }}</a></strong></p>
-                                <p class="custom-m-2">{{  blog.content|slice:":120"|safe }}...(<a class="small more" href="">more</a>)</p>
-                                
+                            <div class="col">
+                                <h5 class="mb-0 mt-2"><strong><a class="mainnav-clr" href="{% url 'the_blog' blog.pk %}">{{ blog.title }}</a></strong></h5>
+                                <p class="custom-m-2 mt-1 mb-0">{{  blog.content|slice:":170"|safe }}...(<a class="small more" href="{% url 'the_blog' blog.pk %}">more</a>)</p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-center">
+                        <div class="row">
+                            <!-- Display likes -->
+                            <strong class="likes-container">
+                                {% if user.is_authenticated %}
+                                <form class="d-inline" action="{% url 'blog_like' blog.pk %}" method="POST">
+                                     {% csrf_token %}
+                                     {% if liked %}
+                                     <button type="submit" name="blog_id" value="{{ blog.id }}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                     {% else %}
+                                     <button type="submit" name="blog_id" value="{{ blog.id }}" class="btn-like"><i class="far fa-heart"></i></button>
+                                     {% endif %}
+                                </form>
+                                {% else %}
+                                <span class="text-secondary"><a href="{% url 'account_login' %}"><i class="far fa-heart"></i></a></span>
+                                {% endif %}
+                                <span class="text-secondary">{{ blog.number_likes }} Likes |  </span>
+                            </strong>
+                            
+                        </div>
+                        <div>
+                            <!-- Display comments -->
+                            {% with blog.comments.count as total_comments %}
+                                <strong >
+                                    <span>  <i class="far fa-comments text-secondary"> </i><a class="text-secondary ml-3" href="#comment"> {{ total_comments }} Comments</a></span>
+                                </strong>
+                            {% endwith %}
                         </div>
                     </div>
                 </div>

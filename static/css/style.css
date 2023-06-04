@@ -131,6 +131,20 @@ body {
 .form-bckg{
     background: #E1D4BB;
 }
+/*______________________________________ Like Heart ___________________________________________________________*/
+
+.btn-like {
+    color: #DD818E;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #DD818E;
+    background: transparent;
+    border: none;
+}
 
 /* __________________style text/img hero img__________________________ */
 
