@@ -1,0 +1,296 @@
+[
+{
+    "model": "product.category",
+    "pk": 1,
+    "fields": {
+        "cat_name": "Vases"
+    }
+},
+{
+    "model": "product.category",
+    "pk": 2,
+    "fields": {
+        "cat_name": "Cups"
+    }
+},
+{
+    "model": "product.category",
+    "pk": 3,
+    "fields": {
+        "cat_name": "Plates & Bowls"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 1,
+    "fields": {
+        "sku": null,
+        "name": "Artisan Earth Vessel",
+        "description": "Discover the exquisite craftsmanship of our hand-made clay vases. Each Artisan Earth Vessel is meticulously crafted by skilled artisans, blending traditional techniques with contemporary design. With its unique texture and organic allure, this clay vase serves as a stunning centerpiece or a beautiful accent to elevate any space. Embrace the timeless beauty of handmade artistry and bring a touch of nature's elegance into your home with our Artisan Earth Vessel.",
+        "price": "49.99",
+        "image": "tom-crew-iUFS1GCpEbk-unsplash_wndIlWA.jpg",
+        "category": 1,
+        "rating": "4.70"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 2,
+    "fields": {
+        "sku": null,
+        "name": "Nature's Harmony",
+        "description": "Experience the harmonious blend of art and nature with our handcrafted clay vases. Nature's Harmony Pottery captures the essence of organic beauty in each unique piece. Meticulously shaped and sculpted by skilled artisans, these clay vases showcase the intricate details and textures inspired by the natural world. Whether displayed as a standalone art piece or filled with vibrant blooms, our Nature's Harmony Pottery adds a touch of rustic elegance to any setting. Embrace the artistry of nature and let these clay vases become a focal point of tranquility and serenity in your space.",
+        "price": "59.99",
+        "image": "kasia-sikorska-71EoX-X3LNU-unsplash_1.jpg",
+        "category": 1,
+        "rating": "4.80"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 3,
+    "fields": {
+        "sku": null,
+        "name": "Pure Elegance Ceramic Plate",
+        "description": "Indulge in the pure elegance of our handcrafted white clay plates. Each plate in our Pure Elegance collection is meticulously crafted by skilled artisans, showcasing the pristine beauty of white clay. The smooth and lustrous surface, combined with the gentle curves and minimalist design, makes these ceramic plates a stunning addition to your tableware collection. Whether you're serving a gourmet meal or displaying them as decorative pieces, our Pure Elegance Ceramic Plates exude timeless sophistication and elevate any dining experience. Embrace the refined craftsmanship and enjoy the understated luxury of these exquisite white clay plates.",
+        "price": "15.00",
+        "image": "mariana-beltran-Z2zmQlZL_3U-unsplash.jpg",
+        "category": 3,
+        "rating": "4.30"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 4,
+    "fields": {
+        "sku": null,
+        "name": "Artisan's Touch Clay Cup",
+        "description": "Experience the artistry and warmth of our handcrafted clay cups. Each Artisan's Touch cup is skillfully molded and shaped by talented artisans, creating a unique and comforting drinking vessel. Crafted from high-quality clay, these cups exude rustic charm and showcase the natural beauty of the material. With their earthy tones and textured surface, they offer a tactile and sensory experience with every sip. Whether you're enjoying a soothing cup of tea or savoring your favorite beverage, our Artisan's Touch Clay Cups bring a sense of craftsmanship and connection to your daily rituals. Immerse yourself in the beauty of handmade pottery and elevate your drinking experience with these exceptional clay cups.",
+        "price": "15.00",
+        "image": "tom-crew-vu0lyZYeseY-unsplash.jpg",
+        "category": 2,
+        "rating": "5.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 5,
+    "fields": {
+        "sku": null,
+        "name": "Serene Clay Serenity Mug",
+        "description": "Discover tranquility in every sip with our handcrafted Serene Clay Serenity Mug. Each mug is carefully fashioned by skilled artisans, combining the beauty of clay with a serene aesthetic. The soft curves and smooth texture of this clay mug create a harmonious and comfortable hold, enhancing your drinking experience. The natural clay tones, adorned with delicate glaze accents, bring a sense of calm and serenity to your morning routine or evening tea rituals. Embrace the grounding qualities of handmade pottery and let our Serene Clay Serenity Mug become your go-to companion for moments of relaxation and reflection.",
+        "price": "18.00",
+        "image": "tom-crew-INY4JowWde4-unsplash.jpg",
+        "category": 2,
+        "rating": "5.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 6,
+    "fields": {
+        "sku": null,
+        "name": "Rustic Artistry Clay Tumbler",
+        "description": "Experience the rustic artistry of our handcrafted clay tumbler. Each tumbler is meticulously crafted by skilled artisans, showcasing the natural beauty and earthy tones of clay. With its sturdy yet elegant design, this clay tumbler adds a touch of warmth and character to your beverage experience. Whether you're sipping your morning coffee or enjoying a refreshing drink, our Rustic Artistry Clay Tumbler brings a sense of handmade charm and authenticity to your everyday moments.",
+        "price": "15.00",
+        "image": "tom-crew-_9carLjK19I-unsplash.jpg",
+        "category": 2,
+        "rating": "4.90"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 7,
+    "fields": {
+        "sku": null,
+        "name": "Clay Elegance Cup",
+        "description": "Elevate your drinkware collection with the timeless elegance of our handcrafted clay cup. The Elevate Clay Elegance Cup is meticulously sculpted by skilled artisans, combining sleek lines with a refined aesthetic. The smooth surface and gentle curves create a comfortable and sophisticated drinking experience. Whether you're enjoying a cup of your favorite brew or hosting a special gathering, our Elevate Clay Elegance Cup adds a touch of understated luxury and sophistication to any occasion.",
+        "price": "15.00",
+        "image": "tom-crew-oHrC8V_XRU4-unsplash.jpg",
+        "category": 2,
+        "rating": "5.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 8,
+    "fields": {
+        "sku": null,
+        "name": "Earthbound Clay Espresso Cup",
+        "description": "Unearth the essence of your espresso ritual with our handcrafted Earthbound Clay Espresso Cup. This small yet mighty cup is meticulously hand-formed by skilled artisans, capturing the raw beauty and organic qualities of clay. The compact size and ergonomic design fit perfectly in your hand, enhancing the enjoyment of your espresso moments. With its earthy hues and tactile surface, the Earthbound Clay Espresso Cup brings a grounding and sensory experience to your daily coffee rituals. Immerse yourself in the earthy delights and elevate your espresso experience with this captivating clay cup.",
+        "price": "15.00",
+        "image": "pexels-anna-nekrashevich-7214824.jpg",
+        "category": 2,
+        "rating": "4.90"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 9,
+    "fields": {
+        "sku": null,
+        "name": "Simplicity Clay Tea Cup",
+        "description": "Embrace the beauty of simplicity with our handcrafted clay tea cup. The Simplicity Clay Tea Cup features clean lines and a minimalist design, showcasing the pure essence of clay. Crafted with meticulous attention to detail, this cup offers a serene and uncluttered aesthetic. The smooth texture and gentle curves create a calming drinking experience, allowing you to fully appreciate the flavors and aromas of your favorite tea. Indulge in the serenity of simplicity with our elegant Simplicity Clay Tea Cup.",
+        "price": "10.00",
+        "image": "diana-light-u_jt9A7FADk-unsplash.jpg",
+        "category": 2,
+        "rating": "4.90"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 10,
+    "fields": {
+        "sku": null,
+        "name": "Natural Harmony Bowl",
+        "description": "Discover the natural harmony of our handcrafted clay bowl. Each bowl is skillfully shaped by artisans, showcasing the earthy tones and organic texture of clay. The generous size and rounded shape make it perfect for serving nourishing soups, hearty salads, or delectable desserts. Whether used for everyday meals or special occasions, our Natural Harmony Clay Bowl brings a touch of rustic elegance and a sense of connection to nature to your dining experience.",
+        "price": "49.99",
+        "image": "tom-crew-SITGdvztUdg-unsplash.jpg",
+        "category": 3,
+        "rating": "5.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 11,
+    "fields": {
+        "sku": null,
+        "name": "Artisanal Bliss Bowl",
+        "description": "Experience the blissful beauty of our artisanal clay bowl. Handcrafted with meticulous care, this bowl showcases the unique craftsmanship and artistic flair of skilled artisans. The textured surface and captivating glaze create a mesmerizing visual appeal, while the spacious interior offers ample room for your culinary creations. Whether used for serving your favorite dishes or as a decorative centerpiece, our Artisanal Clay Bliss Bowl adds a touch of artistic charm and joyousness to your table.",
+        "price": "49.99",
+        "image": "tom-crew-Mz__0nr1AM8-unsplash.jpg",
+        "category": 3,
+        "rating": "5.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 12,
+    "fields": {
+        "sku": null,
+        "name": "Earthy Delight Clay Bowl",
+        "description": "Indulge in the earthy delight of our handcrafted clay bowl. Each bowl is lovingly formed by skilled artisans, capturing the natural allure of clay with its earth-toned hues and rugged texture. The robust design and deep capacity make it perfect for serving hearty stews, flavorful grains, or colorful fruit salads. Whether used for everyday dining or special occasions, our Earthy Delight Clay Bowl adds a touch of rustic charm and a connection to the natural world to your culinary presentations.",
+        "price": "43.00",
+        "image": "norris-packer-9aDG6Y21fY4-unsplash.jpg",
+        "category": 3,
+        "rating": "4.70"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 13,
+    "fields": {
+        "sku": null,
+        "name": "Organic Harmony Clay Plate",
+        "description": "Experience the organic harmony of our handcrafted clay plate. Each plate is skillfully shaped by artisans, showcasing the earthy tones and natural texture of clay. The generous size and round shape make it perfect for serving a variety of dishes, from delectable main courses to delectable desserts. Whether used for everyday meals or special occasions, our Organic Harmony Clay Plate brings a touch of rustic elegance and a connection to nature to your dining experience.",
+        "price": "17.00",
+        "image": "an_vision-vZS1KOMkAzk-unsplash.jpg",
+        "category": 3,
+        "rating": "4.90"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 14,
+    "fields": {
+        "sku": null,
+        "name": "Serenity Clay Dinner Plate",
+        "description": "Elevate your dining experience with the serene elegance of our Serenity Clay Dinner Plate. This handcrafted plate exudes a sense of calm and tranquility with its soothing clay tones and graceful design. Whether used for everyday dining or special occasions, the spacious surface offers an ideal canvas for presenting your culinary delights. Immerse yourself in the serenity of handmade pottery and let our Serenity Clay Dinner Plate become a symbol of beauty and harmony on your dining table.",
+        "price": "15.00",
+        "image": "sareh-askarzadeh-baI6aII6Cvk-unsplash.jpg",
+        "category": 3,
+        "rating": "5.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 15,
+    "fields": {
+        "sku": null,
+        "name": "Whimsical Clay Side Bowl",
+        "description": "Add a touch of whimsy to your table with our handcrafted clay side bowl. Each bowl is skillfully molded by artisans, showcasing playful and organic shapes that bring a sense of joy to your dining experience. The compact size and rounded edges make it perfect for serving appetizers, bread, or small bites. Whether used for casual gatherings or as a charming addition to your everyday tableware, our Whimsical Clay Side Bowl invites a sense of fun and creativity to your culinary presentations.",
+        "price": "20.00",
+        "image": "lynnsey-schneider-pP1hJErzGBw-unsplash.jpg",
+        "category": 3,
+        "rating": "5.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 16,
+    "fields": {
+        "sku": null,
+        "name": "Harmony Bloom Vase",
+        "description": "Discover the harmonious beauty of our handcrafted clay vase. The Harmony Bloom Clay Vase is skillfully molded by artisans, capturing the essence of balance and tranquility. With its graceful curves and earthy texture, this vase provides an exquisite display for your favorite floral arrangements. Whether adorning a tabletop or brightening up a room, our Harmony Bloom Clay Vase brings a sense of serenity and natural elegance to any space.",
+        "price": "55.00",
+        "image": "tom-crew-NUUjVj4YQLA-unsplash.jpg",
+        "category": 1,
+        "rating": "5.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 17,
+    "fields": {
+        "sku": null,
+        "name": "Artisanal Earthscape Vase",
+        "description": "Immerse yourself in the artistry of nature with our Artisanal Earthscape Clay Vase. Each vase is meticulously hand-formed, showcasing the organic beauty of clay. The textured surface and earth-toned glazes evoke the captivating landscapes of the natural world. Whether displayed as a standalone art piece or filled with lush botanicals, our Artisanal Earthscape Clay Vase becomes a focal point, adding a touch of artistic allure and a connection to the earth's elements to your living space.",
+        "price": "55.00",
+        "image": "tom-crew-JT3W6P1mYtU-unsplash.jpg",
+        "category": 1,
+        "rating": "4.80"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 18,
+    "fields": {
+        "sku": null,
+        "name": "Serenity Sculptural Vase",
+        "description": "Experience the serene elegance of our Serenity Clay Sculptural Vase. This handcrafted vase is a work of art, featuring flowing lines and a sculptural form that exudes calmness and grace. Meticulously crafted by skilled artisans, it showcases the beauty of clay with its gentle curves and tactile surface. Whether displayed as a standalone centerpiece or showcasing a single stem, our Serenity Clay Sculptural Vase brings a sense of tranquility and refined beauty to your home.",
+        "price": "59.99",
+        "image": "tom-crew-S2WN_iXhAEQ-unsplash_xlpyx3B.jpg",
+        "category": 1,
+        "rating": "5.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 19,
+    "fields": {
+        "sku": null,
+        "name": "Organic Reflections Vase",
+        "description": "Reflect the beauty of nature with our Organic Reflections Clay Vase. Each vase is lovingly shaped by artisans, capturing the fluidity and organic shapes found in the natural world. The earthy tones and subtle variations in texture create a sense of depth and connection to the environment. Whether filled with wildflowers or standing alone as a sculptural piece, our Organic Reflections Clay Vase brings a touch of rustic charm and a harmonious ambiance to any space.",
+        "price": "49.99",
+        "image": "tom-crew-8_ldgq801cE-unsplash_umCiImq.jpg",
+        "category": 1,
+        "rating": "4.90"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 20,
+    "fields": {
+        "sku": null,
+        "name": "Rustic Artistry Vessel",
+        "description": "Unleash the rustic artistry with our handcrafted clay vessel. The Rustic Artistry Clay Vessel showcases the raw and authentic beauty of clay, carefully formed and textured by skilled artisans. Its irregular shape and earthy hues evoke a sense of simplicity and natural appeal. Whether displayed as a standalone art piece or holding dried botanicals, our Rustic Artistry Clay Vessel becomes a statement of craftsmanship and rustic elegance, adding a touch of character and warmth to your home decor.",
+        "price": "45.00",
+        "image": "tom-crew-E64Hv5Ab_nQ-unsplash_BsnUUsi.jpg",
+        "category": 1,
+        "rating": "5.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 21,
+    "fields": {
+        "sku": null,
+        "name": "Artistic Impressions Plate",
+        "description": "Experience the artistic impressions showcased in our handcrafted clay plate. Each plate is a testament to the creativity and craftsmanship of skilled artisans, featuring unique patterns and intricate designs inspired by artistic motifs. The combination of earthy tones and captivating textures adds a touch of elegance and sophistication to your dining experience. Whether used for everyday meals or special occasions, our Artistic Impressions Clay Plate becomes a canvas for culinary creations, allowing you to showcase your artistic flair and delight your guests with a visually stunning presentation.",
+        "price": "17.00",
+        "image": "tom-crew-YA2E3d7a9Wo-unsplash.jpg",
+        "category": 3,
+        "rating": "4.90"
+    }
+}
+]

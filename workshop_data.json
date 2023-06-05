@@ -1,0 +1,16 @@
+[
+{
+    "model": "workshop.workshop",
+    "pk": 2,
+    "fields": {
+        "title": "Unleash Your Creativity: Handcrafted Pottery Workshop for Art Enthusiasts",
+        "image": "2210.q805.012.S.m004.c12.Hands_craft_flat_composition_NVjApNl.jpg",
+        "description": "Picture yourself in a serene and inviting studio space, surrounded by the earthy aroma of clay, where every touch and every shape has the power to evoke emotions and bring your imagination to life. Our expert pottery artist and instructor will be your guiding light, nurturing your artistic journey every step of the way.\r\n<br>\r\n<br>\r\nDuring this captivating workshop, you'll delve into the fundamentals of hand-building techniques, unraveling the secrets behind the mesmerizing pinch, coil, and slab methods. Watch as your fingertips mold and shape the clay, transforming it into extraordinary vessels, sculptures, or whatever your heart desires. With every stroke and contour, you'll witness your creations gradually taking form, reflecting your unique artistic vision.\r\n<br>\r\nBut that's not all! The wheel of creativity awaits you, beckoning you to discover the art of wheel throwing. Experience the sheer joy of coaxing the spinning clay into graceful shapes, mesmerized by the dance between your hands and the potter's wheel. Allow yourself to be captivated by the rhythmic motion, as the wheel becomes an extension of your creative spirit.\r\n<br>\r\n<br>\r\nAs you explore the art of pottery, you'll have the opportunity to experiment with various textures, carving techniques, and surface treatments. Unleash your imagination and transform your clay canvases into masterpieces that speak volumes about your artistic voice. The studio will be buzzing with inspiration and camaraderie, as fellow participants share their ideas, exchange insights, and celebrate each other's progress.\r\n<br>\r\n<br>\r\nUnder the expert guidance of our skilled instructor, you'll also delve into the world of glazing and firing techniques. Discover the transformative power of colors and finishes as you apply glazes to your creations, watching them come alive with a vibrant allure. Witness the magical metamorphosis that occurs during the firing process, as your pieces are permanently transformed into durable ceramic artworks that will stand the test of time.\r\n<br>\r\n<br>\r\nNo prior pottery experience is required—just an open mind, a willingness to get your hands delightfully dirty, and a passion for creativity. All necessary materials will be provided, so you can focus solely on indulging your artistic aspirations. Ensure your place in this extraordinary workshop by reserving your spot today. Visit our website or call us to secure your ticket to an unforgettable artistic adventure.\r\n<br>\r\n<br>\r\nDon't miss this opportunity to escape the ordinary and embrace the extraordinary. Unleash your creativity, discover the joy of pottery, and ignite a lifelong passion for artistic expression.",
+        "start_time": "2023-08-05T09:00:00Z",
+        "end_time": "2023-08-05T13:00:00Z",
+        "location": "Simrockstraße 23, 50823 Köln",
+        "price": "50.00",
+        "places": 12
+    }
+}
+]
