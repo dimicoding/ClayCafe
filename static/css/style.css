@@ -385,6 +385,12 @@ a {
     .header-container {
         padding-top: 80px;
     }
+    .hero-text-color {
+        font-size: 20px;
+    }
+    .shop-now-button {
+        font-size: 20px;
+    }
 
 }
 /* extrasmall screens */
