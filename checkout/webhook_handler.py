@@ -52,8 +52,6 @@ class StripeWH_Handler:
         save_info = intent.metadata.save_info
 
         # Get the Charge object
-        
-
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
         grand_total = round(intent.charges.data[0].amount / 100, 2)

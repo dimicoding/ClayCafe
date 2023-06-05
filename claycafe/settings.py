@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ["claycafe.herokuapp.com", "localhost", "8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu98.gitpod.io","8000-dimicoding-claycafe-3w5yomta35f.ws-eu98.gitpod.io"]
 
