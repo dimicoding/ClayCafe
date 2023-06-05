@@ -34,7 +34,9 @@
                 workshop is designed to inspire and ignite your creative spark.</p>
             
             
-            <a href="{% url 'workshop_book' details.id %}">View Details</a>
+            <a href="{% url 'workshop_book' details.id %}">
+                <button class="btn btn-secondary rounded btn-file px-2 py-1 mt-3">View Details</button> 
+            </a>
         {% endfor %}
         </div>
     </div>

@@ -154,67 +154,70 @@
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-1 text-center">
-                    <h5 class="mb-1 text-dark">opening hours</h5>
-                    <table class="table" style="border-color: #666;">
-                        <tbody>
-                            <tr>
-                                <td>Mon - Fri:</td>
-                                <td>8am - 9pm</td>
-                            </tr>
-                            <tr>
-                                <td>Sat - Sun:</td>
-                                <td>8am - 1am</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-1 text-center">
-                    <h5 class="mb-3 text-dark">Quick Link</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-1">
-                            <a href="{% url 'home' %}" style="color: #4f4f4f;">Home</a>
-                        </li>
-                        <li class="mb-1">
-                            <a href="{% url 'products' %}" style="color: #4f4f4f;">Shop</a>
-                        </li>
-                        <li>
-                            <a href="#!" style="color: #4f4f4f;">Workshops</a>
-                        </li>
-                        <li>
-                            <a href="#!" style="color: #4f4f4f;">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#!" style="color: #4f4f4f;">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-12 mb-1 text-center">
-                    <h5 class="mb-3 text-dark">Location</h5>
+                    <h4 class="mb-3">ClayCafe</h4>
                     <div id="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.715165904357!2d6.9205557!3d50.9485883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf2515d4710301%3A0x693bbc6b49e50701!2sT%C3%B6pferwerkstatt!5e0!3m2!1sen!2s!4v1621703896952!5m2!1sen!2s"
                             frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
+                    <h5 class="mb-1 text-dark">opening hours</h5>
+                    <div>
+                        <table class="table" style="border-color: #666;">
+                            <tbody>
+                                <tr>
+                                    <td>Mon - Fri:</td>
+                                    <td>8am - 9pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sat - Sun:</td>
+                                    <td>8am - 1am</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-1 text-center">
+                    <h4 class="mb-3">Quick Link</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="my-3">
+                            <a href="{% url 'home' %}" style="color: #4f4f4f;">Home</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="{% url 'products' %}" style="color: #4f4f4f;">Shop</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#!" style="color: #4f4f4f;">Workshops</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#!" style="color: #4f4f4f;">Blog</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#!" style="color: #4f4f4f;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-1">
+                    <h4 class="mb-3 form-label">Newsletter</h4>
+                    <div>
+                        <label id="Newsletter" class="form-label">Subscribe To Our Newsletter</label>
+                        <input type="text" class="form-control" Placeholder="Enter Your Email">
+                        <button class="btn btn-danger mt-3 px-3 py-2">Subscribe</button>
+                    </div>
                 </div>
             </div>
             <section class="text-center mb-1">
-                <a href="" class="mainnav-clr me-4">
-                    <i class="fab fa-facebook-f"></i>
+                <a href="https://facebook.com" class="mainnav-clr me-4" rel="noopener" target="_blank">
+                    <i class="fab fa-facebook-f"></i> 
                 </a>
-                <a href="" class=" me-4">
-                    <i class="mainnav-clr fab fa-twitter"></i>
+                <a href="https://www.pinterest.com/" class=" me-4" rel="noopener" target="_blank">
+                    <i class="mainnav-clr fa-brands fab fa-pinterest"></i>
                 </a>
-                <a href="" class=" me-4">
-                    <i class="mainnav-clr fab fa-google"></i>
-                </a>
-                <a href="" class=" me-4">
+                <a href="" class=" me-4" rel="noopener" target="_blank">
                     <i class="mainnav-clr fab fa-instagram"></i>
                 </a>
-                <a href="" class=" me-4">
-                    <i class="mainnav-clr fab fa-linkedin"></i>
+                <a href="https://youtube.com" rel="noopener" target="_blank">
+                    <i class="mainnav-clr fab fa-brands fa-youtube"></i>
                 </a>
-                <a href="" class=" me-4">
-                    <i class="mainnav-clr fab fa-github"></i>
-                </a>
+                
             </section>
         </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
