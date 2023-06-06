@@ -251,6 +251,12 @@ a {
 .bck-img{
     background: url('/media/pexels-anastasia-shuraeva-5566974.jpg') no-repeat center center fixed;
 }
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
+}
 /* Allauth form formatting */
 
 .allauth-form-inner-content div {
