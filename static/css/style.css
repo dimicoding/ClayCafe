@@ -247,6 +247,10 @@ a {
 .fab {
     font-size: x-large;
 }
+
+.bck-img{
+    background: url('/media/pexels-anastasia-shuraeva-5566974.jpg') no-repeat center center fixed;
+}
 /* Allauth form formatting */
 
 .allauth-form-inner-content div {
