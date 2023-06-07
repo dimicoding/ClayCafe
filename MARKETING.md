@@ -46,15 +46,19 @@ In my market research conducted in Cologne, I identified Pottery Art Cafe (websi
 
 **What do your users need?**
 <br>
-
+- Users of the e-commerce Claycafe store may have various needs, including purchasing pottery products, registering for workshops, and seeking information and inspiration through the blog. They may be looking for high-quality pottery items, engaging and informative workshops, and valuable content related to pottery.
 **What information and features can you provide to meet those needs?**
 <br>
 
 **How can you make the information easy to understand?**
 <br>
 
+- To make the information easy to understand, the e-commerce Claycafe store can use clear and concise language in its descriptions, instructions, and blog posts. Visual elements such as big related images can be used to enhance understanding and engagement. The website can also have a user-friendly layout, intuitive navigation, and logical organization of content being able to search and filter their result, making it easy for users to find what they are looking for.
+
 **How can you demonstrate expertise, authoritativeness and trustworthiness in your content?**
 <br>
+
+-Including high-quality blog-posts and practical tips or tutorials further establishes credibility. Engaging with readers by encouraging comments and fostering a sense of community also enhances trustworthiness.
 
 **Would there be other pages within your own site you could link to from your chosen page?**
 <br>
@@ -62,5 +66,19 @@ In my market research conducted in Cologne, I identified Pottery Art Cafe (websi
 **Are there opportunities to link back to external websites that already rank highly on Google?**
 <br>
 
+- Yes, there is an external link to reputable pottery suppliers for the workshop.
+
 **How can you help users discover other relevant parts of your web application?**
 <br>
+
+- Implement strategies such as clear and intuitive navigation menus with categories like "Products," "Workshops," and "Blog."
+
+## Strategies
+
+- **Content Marketing => Blog**
+
+- **Social Media Marketing => Mock FB page**
+
+![Claycafe facebook mockup](/media/readme/seo%20and%20marketing/ClayCafe-facebook.png)
+
+- **Email Marketing => MailChimp Newsletter**
