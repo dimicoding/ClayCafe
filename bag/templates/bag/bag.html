@@ -21,7 +21,7 @@
             <div class="image-container">
                 {% if item.product.image %}
                 <a href="{{ item.product.image.url }}" target="_blank">
-                    <img class="card-img-top img-fluid rounded" style="height: 300px; width: 330px;" src="{{ item.product.image.url }}"
+                    <img class="card-img-top img-fluid rounded" src="{{ item.product.image.url }}"
                         alt="{{ item.product.name }}">
                 </a>
                 {% else %}

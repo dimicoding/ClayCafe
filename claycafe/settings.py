@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     "claycafe.herokuapp.com", "localhost",
     "8000-dimicoding-claycafe-fgp6zi0amc7.ws-eu98.gitpod.io",
     "8000-dimicoding-claycafe-3w5yomta35f.ws-eu98.gitpod.io",
+    "8000-dimicoding-claycafe-3w5yomta35f.ws-eu99.gitpod.io",
     ]
 
 
