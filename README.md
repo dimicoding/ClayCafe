@@ -1,4 +1,18 @@
+<h1 align="center">ClayCafe</h1>
 
+<p align="justify">Welcome to Clay Cafe. We are an ecommerce business specializing in handmade clay products that are as beautiful as they are unique. Explore our collection of vases, cups, plates & bowls, and discover the magic of clay artistry.
+
+But we offer more than just products. Dive into our blog, where we share pottery tips, techniques, and inspiration. Join our on-site workshops to get hands-on experience and learn from skilled artisans and while you're here, don't forget to have a sip of our tasty roasted coffee and snacks for a complete sensory experience.
+
+At Clay Cafe, we're passionate about fostering creativity and providing a space for art enthusiasts to connect. Join us on this clay-filled journey and uncover the wonders of handmade art at Clay Cafe.</p>
+
+<br>
+
+**[Go to the Website](https://claycafe.herokuapp.com/)**
+
+![Am i Responsive](DOCS/readme/img/pp4%20iamresponsive.png)
+
+<br>
 
 
 ### Table of Contents
@@ -37,7 +51,7 @@
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgements)
 
-**Disclaimer:** This E-Commerce store has been created solely for educational purposes. All images used in this store are sourced from free services such as Pexels and Unsplash. Please note that the products and images showcased on this platform are not available for purchase. The address and workshop location provided belong to a local pottery workshop located in Cologne, Germany.
+**Disclaimer:** This E-Commerce store has been created solely for educational purposes. All images used in this store are sourced from free services such as Pexels and Unsplash. Please note that the products and images showcased on this platform are not available for purchase. This project doesn't have a physical cafe, the address and workshop location mentioned in this project belong to a local pottery workshop located in Cologne, Germany.
 
 # UX
 ## Target Audience
