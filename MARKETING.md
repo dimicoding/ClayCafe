@@ -77,7 +77,7 @@ In my market research conducted in Cologne, I identified Pottery Art Cafe (websi
 
 - **Content Marketing => Blog**
 
-- **Social Media Marketing => Mock FB page**
+- **Social Media Marketing => Mockup Facebook page**
 
 ![Claycafe facebook mockup](/media/readme/seo%20and%20marketing/ClayCafe-facebook.png)
 
