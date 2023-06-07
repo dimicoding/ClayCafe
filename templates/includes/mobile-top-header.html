@@ -1,7 +1,7 @@
-<ul class="list-inline navbar-icons-container">
+<ul class="list-inline navbar-icons-container d-flex justify-content-between align-items-center">
   <li class="list-inline-item">
     <a class="text-black nav-link d-block d-lg-none px-2" href="#" id="mobile-search" data-bs-toggle="dropdown" aria-expanded="false">
-        <div><i class="fas fa-search fa-lg"></i></div>
+      <div><i class="fas fa-search fa-lg"></i></div>
     </a>
     <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
       <form class="form" method="GET" action="{% url 'products' %}">
@@ -17,16 +17,13 @@
     </div>
   </li>
   <li class="list-inline-item dropdown">
-    <a class="text-black nav-link d-block d-lg-none px-2" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="text-black nav-link d-block d-lg-none px-2" href="{% url 'workshops_booked' %}" id="user-options">
       <div><i class="fa-solid fa-hands-praying fa-rotate-180 fa-lg"></i></div>
     </a>
-    <div class="dropdown-menu border-0" aria-labelledby="user-options">
-        <!-- If there is other subsections, go here! -->
-    </div>
   </li>
   <li class="list-inline-item dropdown">
     <a class="text-black nav-link d-block d-lg-none px-2" href="#" id="user-options" data-bs-toggle="dropdown" aria-expanded="false">
-        <div><i class="fas fa-user fa-lg"></i></div>
+      <div><i class="fas fa-user fa-lg"></i></div>
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
       {% if request.user.is_authenticated %}
