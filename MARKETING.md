@@ -34,6 +34,14 @@ To this moment, date, 07.06.2023 at 11:06, Wordtracker.com website is not operat
 
 In my market research conducted in Cologne, I identified Pottery Art Cafe (website: https://www.pottery-art-cafe.de/) as a notable pottery business. To further enhance my marketing strategies, I am conducting a comprehensive analysis of other pottery-related businesses, studios, workshops, and ecommerce stores in the area. This research will help me understand the competition, target audience, pricing, and marketing channels. By leveraging this valuable information, I aim to position my pottery ecommerce shop, Claycafe, effectively and become the preferred choice for pottery enthusiasts in Cologne.
 
+## SEO Improvements
+**Meta tags**
+- Meta tags have been added to the base.html file's tags. meta="description" and meta="kewywords"
+**Creating a Sitemap**
+- A sitemap has been made and put in the main folder of the website. It lists the important pages like the homepage, categories, products, and blog posts. This helps search engines find and understand the website's content better, making it more visible and easier to discover.
+**Creating a robots.txt file**
+- A robots.txt file has been created and placed in the main folder of the website. It tells search engines which pages they should look at and which ones they should ignore. This helps control which parts of the website search engines can access, making sure the website appears correctly in search results.
+
 ## Marketing Strategies
 
 **What do your users need?**
