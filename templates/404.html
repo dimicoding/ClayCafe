@@ -6,13 +6,13 @@
 </div>
 {% endblock %} {% block content %}
 
-<div class="d-flex flex-column justify-content-center align-items-center vh-100 bck-img">
+<div class="d-flex flex-column justify-content-center align-items-center bck-img">
     <div class="text-center">
-        <h1 class="mb-0">404</h1>
-        <h6 class="font-weight-bold">Ups...Page not found</h6>
+        <h1 class="mb-0 fw-bold text-light">404</h1>
+        <h6 class="fw-bold text-light">Ups...Page not found</h6>
     </div>
-    <div class="text-center">
-        <a href="{% url 'home' %}">Return Home</a>
+    <div class="text-center mt-5">
+        <a class="text-light" href="{% url 'home' %}">Return Home</a>
     </div>
 </div>
 
