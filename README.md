@@ -52,6 +52,12 @@
 ### Fonts
 ### Images
 ### Wireframes
+
+![Wireframes-1](/media/readme/readme/wirefremes-1.jpeg)
+![Wireframes-2](/media/readme/readme/wireframes-2.jpeg)
+![Wireframes-3](/media/readme/readme/wireframes-3.jpeg)
+![Wireframes-4](/media/readme/readme/wireframes-4.jpeg)
+
 ### Database
 walktrought databases and custom models 
 
