@@ -15,6 +15,7 @@ At Clay Cafe, we're passionate about fostering creativity and providing a space 
 <p align="center">
   <img src="media/readme/readme/Aufzeichnung_2023-06-07_222504_AdobeExpress.gif" alt="Am I Responsive">
 </p>
+![Am i Responsive](DOCS/readme/img/pp4%20iamresponsive.png)
 
 <br>
 
