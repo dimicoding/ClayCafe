@@ -6,17 +6,13 @@
 </div>
 {% endblock %} {% block content %}
 
-<div class="container-fluid bck-img">
-    <div class="row">
-        <div class="col text-center">
-            <h1 class="logo-font mb-0">404</h1>
-            <h6 class="font-weight-bold">Ups...Page not found</h6>
-        </div>
+<div class="d-flex flex-column justify-content-center align-items-center vh-100 bck-img">
+    <div class="text-center">
+        <h1 class="mb-0">404</h1>
+        <h6 class="font-weight-bold">Ups...Page not found</h6>
     </div>
-    <div class="row">
-        <div class="col text-center">
-            <a href="{% url 'home' %}">Return Home</a>
-        </div>
+    <div class="text-center">
+        <a href="{% url 'home' %}">Return Home</a>
     </div>
 </div>
 

@@ -15,6 +15,9 @@ At Clay Cafe, we're passionate about fostering creativity and providing a space 
 
 <br>
 
+**Disclaimer:** This E-Commerce store has been created solely for educational purposes. All images used in this store are sourced from free services such as Pexels and Unsplash. Please note that the products and images showcased on this platform are not available for purchase. This project doesn't have a physical cafe, the address and workshop location mentioned in this project belong to a local pottery workshop located in Cologne, Germany.
+
+<br>
 
 ### Table of Contents
 
@@ -51,8 +54,6 @@ At Clay Cafe, we're passionate about fostering creativity and providing a space 
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgements)
-
-**Disclaimer:** This E-Commerce store has been created solely for educational purposes. All images used in this store are sourced from free services such as Pexels and Unsplash. Please note that the products and images showcased on this platform are not available for purchase. This project doesn't have a physical cafe, the address and workshop location mentioned in this project belong to a local pottery workshop located in Cologne, Germany.
 
 # UX
 ## Target Audience
