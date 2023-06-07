@@ -37,6 +37,29 @@
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgements)
 
+**Disclaimer:** This E-Commerce store has been created solely for educational purposes. All images used in this store are sourced from free services such as Pexels and Unsplash. Please note that the products and images showcased on this platform are not available for purchase. The address and workshop location provided belong to a local pottery workshop located in Cologne, Germany.
+
+# UX
+## Target Audience
+## Website owner business goals
+## User Experience
+
+### User Stories
+
+## Design
+
+### Colours
+### Fonts
+### Images
+### Wireframes
+### Database
+walktrought databases and custom models 
+
+![ERD Diagram](/media/readme/readme/ClayCafe%20-%20ERD%20with%20colored%20entities%20(UML%20notation)%20(2).png)
+
+
+
+
 # User Stories
 
 ###	EPIC: Customer Stories, general view and navigation:
