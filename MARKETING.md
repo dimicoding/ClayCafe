@@ -8,9 +8,11 @@
 - [Marketing Strategies](#marketing-strategies)
 
 ## Keyword Research
+
 <hr>
 
 **Short-Tail-Keywords**
+
 - Pottery cafe
 - Handcrafted pottery
 - Pottery workshop
@@ -18,6 +20,7 @@
 <br>
 
 **Long-Tail-Keywords**
+
 - Pottery workshops for beginners
 - Pottery workshops for kids in Cologne
 - Buy handmade pottery online
@@ -35,20 +38,25 @@ To this moment, date, 07.06.2023 at 11:06, Wordtracker.com website is not operat
 In my market research conducted in Cologne, I identified Pottery Art Cafe (website: https://www.pottery-art-cafe.de/) as a notable pottery business. To further enhance my marketing strategies, I am conducting a comprehensive analysis of other pottery-related businesses, studios, workshops, and ecommerce stores in the area. This research will help me understand the competition, target audience, pricing, and marketing channels. By leveraging this valuable information, I aim to position my pottery ecommerce shop, Claycafe, effectively and become the preferred choice for pottery enthusiasts in Cologne.
 
 ## SEO Improvements
+
 **Meta tags**
+
 - Meta tags have been added to the base.html file's tags. meta="description" and meta="kewywords"
-**Creating a Sitemap**
+  **Creating a Sitemap**
 - A sitemap has been made and put in the main folder of the website. It lists the important pages like the homepage, categories, products, and blog posts. This helps search engines find and understand the website's content better, making it more visible and easier to discover.
-**Creating a robots.txt file**
+  **Creating a robots.txt file**
 - A robots.txt file has been created and placed in the main folder of the website. It tells search engines which pages they should look at and which ones they should ignore. This helps control which parts of the website search engines can access, making sure the website appears correctly in search results.
 
 ## Marketing Strategies
 
 **What do your users need?**
 <br>
+
 - Users of the e-commerce Claycafe store may have various needs, including purchasing pottery products, registering for workshops, and seeking information and inspiration through the blog. They may be looking for high-quality pottery items, engaging and informative workshops, and valuable content related to pottery.
+
 **What information and features can you provide to meet those needs?**
 <br>
+- Users can browse through an extensive product catalog that offers a wide selection of high-quality pottery items. Detailed product descriptions, accompanied by captivating images and pricing information, assist users in making informed purchasing decisions. claycafe, gives the ability to register for informative workshops, allowing them to enhance their pottery skills and knowledge. To further meet users' needs, a blog section is available, offering valuable content such as tips, techniques, and inspiration related to pottery.
 
 **How can you make the information easy to understand?**
 <br>
@@ -63,6 +71,8 @@ In my market research conducted in Cologne, I identified Pottery Art Cafe (websi
 **Would there be other pages within your own site you could link to from your chosen page?**
 <br>
 
+- Yes, there are other pages within the Claycafe website that can be linked. Such as "Workshops and "Contact Us." These linked pages provide users with additional information and access to various aspects of the online store.
+
 **Are there opportunities to link back to external websites that already rank highly on Google?**
 <br>
 
@@ -75,10 +85,20 @@ In my market research conducted in Cologne, I identified Pottery Art Cafe (websi
 
 ## Strategies
 
-- **Content Marketing => Blog**
+**Event Marketing => Webinars and Workshops**
 
-- **Social Media Marketing => Mockup Facebook page**
+- Organize workshops to showcase expertise and provide value to targeted audience. Create informative and engaging content that offers solutions. Use these events to establish claycafe brand to connect with potential customers in a more interactive setting.
+
+**Content Marketing => Blog**
+
+- The blog helps to build trust and credibility with the target audience. It serves as a platform to share knowledge, tips, and insights related to pottery, catering to both beginners and experienced enthusiasts. The blog not only educates the audience but also creates engagement and encourages users to explore the products and services offered.
+
+**Social Media Marketing => Mockup Facebook page**
+
+- This page serves as a mockup for an interactive platform where customers can access essential pottery information, engage through comments and messages, and feel more connected to the business. Facebook effectively reaches a younger, alternative-minded audience and offers potential expansion into other social media platforms like Instagram, which, in my opinion, is a more well-suited social media service for ClayCafe.
 
 ![Claycafe facebook mockup](/media/readme/seo%20and%20marketing/ClayCafe-facebook.png)
 
-- **Email Marketing => MailChimp Newsletter**
+**Email Marketing => MailChimp Newsletter**
+
+- Email marketing, implemented through a MailChimp newsletter, is an effective strategy to stay in touch with the pottery store's audience and keep them informed. By allowing users to subscribe to the newsletter, the strategy aims to build a direct line of communication with interested individuals.
