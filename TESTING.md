@@ -252,6 +252,13 @@ Many issues were identified and resolved during the project, such as unidentifie
 | **Editing entry** |  Click on the title of the created post. | After clicking on the title form validation prevents from entring faulty information. Success alert displays in admin panel. |
 | **Deleting entry** | Delete option on each blog post detail page (admin-panel) allows admin user to delete existing post. | Admin is requested to confirm deletion of entry. "Yes, I'm sure" button deletes entry and success alert confirms action. "No, take me back" button cancels delete action. |
 
+### Contact Page
+
+| Feature | Action                   | Result                 |
+| :-----: | :-----------------------:| :---------------------:|
+| **Contact page** | Navigate to Contact page via navlink | User sees form to get in contact with the administrators of the website.Form validation is present. |
+| **Submit** | clicking on submit button | When the user submits the contact form the page shows a "username" and thanks for the contact. |
+
 ### Profile (authenticated users)
 
 | Feature | Action                  | Expected Result                 |
