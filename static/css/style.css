@@ -260,6 +260,9 @@ a {
     font: 14px Helvetica, Arial, sans-serif;
     width: 100%;
 }
+.bag-empty{
+    width: 40%;
+}
 /* Allauth form formatting */
 
 .allauth-form-inner-content div {

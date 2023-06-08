@@ -77,7 +77,7 @@ In my market research conducted in Cologne, I identified Pottery Art Cafe (websi
 **How can you demonstrate expertise, authoritativeness and trustworthiness in your content?**
 <br>
 
--Including high-quality blog-posts and practical tips or tutorials further establishes credibility. Engaging with readers by encouraging comments and fostering a sense of community also enhances trustworthiness.
+- Including high-quality blog-posts and practical tips or tutorials further establishes credibility. Engaging with readers by encouraging comments and fostering a sense of community also enhances trustworthiness.
 
 **Would there be other pages within your own site you could link to from your chosen page?**
 <br>
