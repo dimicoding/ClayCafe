@@ -70,11 +70,19 @@
 
 
 ### W3C HTML validator
+The Markup Validation Service was used to identify errors in an HTML file. Validation was performed through direct input and by using a URL.
 
-Syntax errors where fixed, nevertheless irrelevant errors to the webbsite functionining were ignored like all the ``Bad value {% url 'products' %}?category=Cu...`` were left
+Syntax errors were corrected, while irrelevant errors that don't affect the functioning of the website were ignored.
 
+For example:
+
+Errors remaining:
+
+``Bad value {% url 'products' %}?category=Cu...`` <br>
+Error: Duplicate ID "user-options" used for dropdown menus in the navigation, derived from Bootstrap.
 Errors fixed:
-- Error: The element button must not appear as a descendant of the a element.
+
+Error: The element "button" must not appear as a descendant of the "a" element.
 
 
 ### W3C Jigsaw validator
