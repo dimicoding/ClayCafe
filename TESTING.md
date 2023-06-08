@@ -10,6 +10,7 @@
     - [Pep8 Validation](#pep8-validation)
 - [Responsiveness](#responsiveness)
 - [Manual Testing](#manual-testing)
+- [Testing Aknowledgments](#testing-aknowledgments)
 
 ## Validator Testing
 
@@ -122,3 +123,7 @@ Many issues were identified and resolved during the project, such as unidentifie
 - @media (max-width: 576px) 
 
 ## Manual Testing
+
+## Testing aknowledgments
+
+During this phase, I came to the realization that for a project of this scale and with a tight deadline of approximately three weeks, I needed to adopt a different approach. I realize the importance of testing each individual app once its main functionality was implemented would have produce a better result, rather than attempting to test everything simultaneously. This approach would have prevented me from feeling overwhelmed and allowed for better testing and early error correction. Unfortunately, I only realized this now, but it has served as a valuable lesson for future projects.
