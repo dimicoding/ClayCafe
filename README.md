@@ -265,3 +265,7 @@ https://chat.openai.com/ - Was only used to pre-fill products, workshop, and blo
 Navbar adapted from: https://demit-sb.herokuapp.com/ 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 
+Cohort facilitator's Kay Welfare project: https://chirpy-chooks.herokuapp.com/ , helped me to structurize the manual testing in a more complete way.
+
+
+

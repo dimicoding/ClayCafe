@@ -16,7 +16,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h2 class="logo-font mb-4">My profile</h2>
+            <h2 class="logo-font my-3">My profile</h2>
         </div>
     </div>
     <div class="row">
@@ -25,7 +25,7 @@
             <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button class="btn btn-secondary rounded btn-file px-2 py-1 mt-3">Update Information</button>
+                <button class="btn btn-secondary rounded btn-file px-2 py-1 my-3">Update Information</button>
             </form>
         </div>
 
