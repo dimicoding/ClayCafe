@@ -27,9 +27,20 @@
 
 <br>
 
-To this moment, date, 07.06.2023 at 11:06, Wordtracker.com website is not operational, tried on Opera, Chrome and Microsoft Edge browsers. (So as in incognito mode)
+The search volume for pottery products appears to be low. To enhance keyword ratings, alternative terms like "clay" or "cafe" can be utilized. Additionally, if your business is based in Germany, using German keywords would likely yield a higher search volume compared to English. Wordtracker is a very useful tool to plan the direction of your online bussiness.
 
-![Wordtracker-down](/media/readme/seo%20and%20marketing/wordtracker-down.png)
+![Wordtracker-search](/media/readme/seo%20and%20marketing/pottery-workshop.png)
+
+<br>
+
+![Wordtracker-search](/media/readme/seo%20and%20marketing/pottery-cafe-search.png)
+
+<br>
+
+![Wordtracker-search](/media/readme/seo%20and%20marketing/buy%20handmade-search.png)
+
+<br>
+
 
 ## Research of similar businesses
 
