@@ -71,6 +71,12 @@
 
 ### W3C HTML validator
 
+Syntax errors where fixed, nevertheless irrelevant errors to the webbsite functionining were ignored like all the ``Bad value {% url 'products' %}?category=Cu...`` were left
+
+Errors fixed:
+- Error: The element button must not appear as a descendant of the a element.
+
+
 ### W3C Jigsaw validator
 
 ### JS Validation

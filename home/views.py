@@ -1,11 +1,16 @@
 from django.shortcuts import render
 from .forms import ContactForm
+from django.core.mail import send_mail
 
 # Create your views here.
 
 def index(request):
     """View to return index page"""
     return render(request, 'index.html')
+
+from django.core.mail import send_mail
+from django.shortcuts import render
+from .forms import ContactForm
 
 def contact(request):
     """View to return index page"""
@@ -18,20 +23,17 @@ def contact(request):
             matter = form.cleaned_data["matter"]
             message = form.cleaned_data["message"]
 
-            subject = "Client Contant Form"
-            body = f"Name:{name}\nMatter:{matter}\nEmail:{email}\n\nMessage:\n{message}"
+            subject = "Client Contact Form"
+            body = f"Name: {name}\nMatter: {matter}\nEmail: {email}\n\nMessage:\n{message}"
 
             send_mail(
                 subject,
                 body,
-                email,
-                matter,
-                ["claycafeartisanal@gmail.com"],
+                "claycafeartisanal@gmail.com",
+                [email],
                 fail_silently=False,
             )
             return render(request, "contact.html", {"name": name})
     else:
         form = ContactForm()
-    return render(
-        request,
-        "contact.html", {"form": form})
+    return render(request, "contact.html", {"form": form})

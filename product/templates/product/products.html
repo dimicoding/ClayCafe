@@ -28,25 +28,32 @@
             <div class="col-auto">
                 <p class="text-muted my-3">
                     {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class="small"><a class="more" href="{% url 'products' %}"><i class="fas fa-chevron-left"></i> Products Home</a> | </span>
+                    <span class="small"><a class="more" href="{% url 'products' %}"><i class="fas fa-chevron-left"></i>
+                            Products Home</a> | </span>
                     {% endif %}
-                    {{ products|length }} Clay Crafts{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                    {{ products|length }} Clay Crafts{% if search_term %} found for
+                    <strong>"{{ search_term }}"</strong>{% endif %}
                 </p>
             </div>
             <div class="col-auto">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle px-3 my-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle px-3 my-3" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         <i class="fa-solid fa-sort"></i> Sort
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc"><i class="fa-solid fa-filter"></i> By Price</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc"><i class="fa-solid fa-filter"></i> By Rating</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc"><i
+                                    class="fa-solid fa-filter"></i> By Price</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc"><i
+                                    class="fa-solid fa-filter"></i> By Rating</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
                     </ul>
                 </div>
             </div>
-        </div>                
+        </div>
         {% for product in products %}
         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
             <div class="card h-100 border-0">
@@ -58,15 +65,13 @@
                     <small class="text-center">
                         <!-- logic to display a link to a category of the product -->
                         {% if product.category == 'Vases' %}
-                        <a class="cat-font"
-                            href="{% url 'products' %}?category=Vases">{{ product.category }}</a>
+                        <a class="cat-font" href="{% url 'products' %}?category=Vases">{{ product.category }}</a>
                         <i class="fa-solid fa-tags" style="color: #537188;"></i>
                         {% elif product.category == 'Cups' %}
                         <a class="cat-font" href="{% url 'products' %}?category=Cups">{{ product.category }}</a>
                         <i class="fa-solid fa-tags" style="color: #537188;"></i>
                         {% else %}
-                        <a class="cat-font"
-                            href="{% url 'products' %}?category={{ product.category|urlencode }}">
+                        <a class="cat-font" href="{% url 'products' %}?category={{ product.category|urlencode }}">
                             {{ product.category }}</a>
                         <i class="fa-solid fa-tags" style="color: #537188;"></i>
                         {% endif %}
@@ -80,8 +85,10 @@
                 <div class="card-footer bg-white pt-0 border-0 text-left">
                     <div class="row">
                         <div class="col mb-5">
-                            <p class="mb-0 mt-2"><strong><a class="mainnav-clr" href="{% url 'product_detail' product.id %}">{{ product.name }}</a></strong></p>
-                            <p class="custom-m-2">{{  product.description|slice:":120" }}...(<a class="small more" href="{% url 'product_detail' product.id %}">more</a>)</p>
+                            <p class="mb-0 mt-2"><strong><a class="mainnav-clr"
+                                        href="{% url 'product_detail' product.id %}">{{ product.name }}</a></strong></p>
+                            <p class="custom-m-2">{{  product.description|slice:":120" }}...(<a class="small more"
+                                    href="{% url 'product_detail' product.id %}">more</a>)</p>
                             {% if product.rating %}
                             <small class="text-muted"><i class="fas fa-star mr-1"
                                     style="color: #CBB279;"></i>{{ product.rating }} / 5</small>
