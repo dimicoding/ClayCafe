@@ -1,4 +1,4 @@
-<h1 align="center"><span style="font-weight: bold;">CLAY</span>CAFE</h1>
+<h1 align="center"><strong>CLAY</strong>CAFE</h1>
 
 
 

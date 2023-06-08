@@ -124,6 +124,48 @@ Many issues were identified and resolved during the project, such as unidentifie
 
 ## Manual Testing
 
+**Navbar**
+
+| Feature | Action             | Expected Result                 |
+| :-----: | :-----------------:| :------------------------------:|
+| **Home Link Logo** | While not on homepage, click logo. | User is redirected back to homepage. |
+| **"Home" Link** | While not on homepage, click "Home". | User is redirected back to homepage. |
+| **"Shop" dropdown** | Click dropdown in navbar | User is presented with a list of links (all categories, Vases, Cups, Plates &  Bowls) |
+| **Product- Category** | From "Shop" dropdown, select sub-link | User is directed to page listing all products of same category |
+| **"Workshop" link** | Click Workshop link in navbar | User is directed to workshop page listing all entries |
+| **"Blog" link** | Click Blog link in navbar | User is directed to the blog page with all the blog posts |
+| **"Contact** | Click Contact link in navbar | User is directed to Contact page with the form to send to the administrator|
+| **"Workshops icon" link** | Click Workshop link in navbar | User is directed to workshop page listing all user's selected entries (This function is in development, more time is needed)|
+| **"Profile" dropdown** | Click Profile dropdown | Authenticated user sees option to "My Profile" and  "Logout". Admin user sees option to "Product Managment", "My Profile", and "Logout"|
+| **"Login" Link** | While not authenticated, click "Login". | User is directed to Login form. |
+| **"Register" Link** | While not authenticated, click "Register". | User is directed to Sign Up form. |
+| **"Logout" Link** | While authenticated, click "Logout". | User is directed to page with Sign Out button. |
+| **"Basket" Link** | Click Basket link in navbar | User is directed to shopping basket page. |
+
+<br>
+
+**Footer:**
+
+| Feature | Action             | Expected Result                 |
+| :-----: | :-----------------:| :------------------------------:|
+| **"Home" Link** | While not on homepage, click "Home". | User is redirected back to homepage. |
+| **"Shop" dropdown** | Click dropdown in footer | User is presented with a list of links (all categories, Vases, Cups, Plates &  Bowls) |
+| **Product- Category** | From "Shop" dropdown, select sub-link | User is directed to page listing all products of same category |
+| **"Workshop" link** | Click Workshop link in footer | User is directed to workshop page listing all entries |
+| **"Blog" link** | Click Blog link in footer | User is directed to the blog page with all the blog posts |
+| **"Contact** | Click Contact link in footer | User is directed to Contact page with the form to send to the administrator|
+| **"Newsletter** | Enter valid e-mail and Click subscribe link in footer | User is presented with confirmation success mesage if email is valid|
+| **"Map" link** | Click map link in footer | User is directed to the google maps page with location of the bussiness. |
+
+**Authentication**
+
+| Feature | Action             | Expected Result                 |
+| :-----: | :-----------------:| :------------------------------:|
+| **Login**    | As an already registered user, go to the login page, complete the login form, and click the login button. | Form validation is applied to ensure the required fields are filled correctly. If the login is successful, the user is directed to the homepage, and a success message is displayed, mentioning the "username" |
+| **Forgot Password function** | On the login page, click the "Forgot Password" link. | User is directed to the Reset Password page. Form validation is applied to ensure the required fields are filled correctly. A password reset link is sent to the user's email for resetting the password. |
+| **Sign Up**   | As an unregistered user, go to the Sign Up page, complete the form, and submit it.  | Form validation is applied to ensure the required fields are filled correctly. After successful submission, the user receives a confirmation email containing a registration verification link. Clicking the link directs the user to the Login page. A success message informs the user about the successful account registration. |
+| **Logout**    | As an authenticated user, go to the Logout page and click the "Sign out" button.   | User is directed to the homepage. A success message informs the user about the successful sign out. |
+
 ## Testing aknowledgments
 
 During this phase, I came to the realization that for a project of this scale and with a tight deadline of approximately three weeks, I needed to adopt a different approach. I realize the importance of testing each individual app once its main functionality was implemented would have produce a better result, rather than attempting to test everything simultaneously. This approach would have prevented me from feeling overwhelmed and allowed for better testing and early error correction. Unfortunately, I only realized this now, but it has served as a valuable lesson for future projects.
