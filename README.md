@@ -1,4 +1,6 @@
-<h1 align="center">ClayCafe</h1>
+<h1 align="center"><strong>CLAY</strong>CAFE</h1>
+
+
 
 <p align="justify">Welcome to Clay Cafe. We are an ecommerce business specializing in handmade clay products that are as beautiful as they are unique. Explore our collection of vases, cups, plates & bowls, and discover the magic of clay artistry.
 
@@ -57,32 +59,23 @@ At Clay Cafe, we're passionate about fostering creativity and providing a space 
 
 # UX
 ## Target Audience
+- Pottery enthusiasts of all ages and skill levels
+- Individuals looking for unique and handcrafted pottery items
+- Art and craft lovers seeking a creative outlet
+- People interested in learning pottery through workshops
+- Blog readers interested in pottery-related articles, tips, and inspiration
 ## Website owner business goals
+- Offer a diverse range of high-quality pottery products
+- Make the buying process easy and secure
+- Newsletter, targeted email marketing and special offers
+- Make workshop information clear and appealing
+- Create a professional and attractive website design
+- Engage with customers through social media
+- Engage with customers through the blog
+
 ## User Experience
 
 ### User Stories
-
-## Design
-
-### Colours
-### Fonts
-### Images
-### Wireframes
-
-![Wireframes-1](/media/readme/readme/wirefremes-1.jpeg)
-![Wireframes-2](/media/readme/readme/wireframes-2.jpeg)
-![Wireframes-3](/media/readme/readme/wireframes-3.jpeg)
-![Wireframes-4](/media/readme/readme/wireframes-4.jpeg)
-
-### Database
-walktrought databases and custom models 
-
-![ERD Diagram](/media/readme/readme/ClayCafe%20-%20ERD%20with%20colored%20entities%20(UML%20notation)%20(2).png)
-
-
-
-
-# User Stories
 
 ###	EPIC: Customer Stories, general view and navigation:
 
@@ -153,10 +146,22 @@ walktrought databases and custom models
 28. As a website owner, I want to be able to edit products so that I can change product prices, images, and descriptions.
 
 29. As a website owner, I want to be able to delete a product so that I can remove items that are no longer available for sale.
+## Design
 
+### Colours
+### Fonts
+### Images
+### Wireframes
 
+![Wireframes-1](/media/readme/readme/wirefremes-1.jpeg)
+![Wireframes-2](/media/readme/readme/wireframes-2.jpeg)
+![Wireframes-3](/media/readme/readme/wireframes-3.jpeg)
+![Wireframes-4](/media/readme/readme/wireframes-4.jpeg)
 
+### Database
+walktrought databases and custom models 
 
+![ERD Diagram](/media/readme/readme/ClayCafe%20-%20ERD%20with%20colored%20entities%20(UML%20notation)%20(2).png)
 
 
 # Agile Methodology
