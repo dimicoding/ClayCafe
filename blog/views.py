@@ -6,9 +6,10 @@ from .forms import CommentForm
 from django.contrib import messages
 # Create your views here.
 
+
 def blog(request):
 
-    return render(request,"blog/blog.html", {})
+    return render(request, "blog/blog.html", {})
 
 
 class HomeView(ListView):

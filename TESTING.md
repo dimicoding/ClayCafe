@@ -86,11 +86,39 @@ Error: The element "button" must not appear as a descendant of the "a" element.
 
 
 ### W3C Jigsaw validator
+The [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS of the website. The CSS passes with 0 errors.
+
+<br>
+
+![css](media/readme/readme/css.png)
 
 ### JS Validation
-
+To ensure the quality of the JavaScript/JQuery, I used JSHint for validation. It helps identify any potential issues or mistakes in the code. The majority of the JavaScript code in this project follows the guidelines provided in the walkthrough.
 ### PEP8 Validation
+To verify python in this project i used the command `flake8 --statistics`
+
+Many issues were identified and resolved during the project, such as unidentified imports and duplicates. However, to meet the project submission deadline, some non-critical issues were left unresolved. The screenshot below provides a visual representation of the remaining issues. These issues primarily affect code readability and consistency rather than the functionality of the project.
+
+![flake-statistics](media/readme/readme/flake8%20--statistics.png)
 
 ## Responsiveness
+
+- All website pages have been designed to be responsive, ensuring they adapt to different screen sizes and devices.
+
+- The design has been tested on multiple browsers, including Microsoft Edge, Chrome, Opera GX, and Mi(phone-Xiaomi), to ensure that it looks and functions well across different platforms.
+
+- Bootstrap responsive classes were utilized to create a responsive design for this project.
+
+- The design was tested using Chrome DevTools, a browser-based tool for testing and debugging responsive designs.
+
+- Navigation has been simplified for smaller screens, with a hamburger menu replacing the desktop navigation bar, making it easier for users to navigate the site on mobile devices.
+
+<br>
+
+**Additionaly following media queries were used:**
+- @media (min-width: 1200px)
+- @media (min-width: 992px)
+- @media (min-width: 576px) 
+- @media (max-width: 576px) 
 
 ## Manual Testing

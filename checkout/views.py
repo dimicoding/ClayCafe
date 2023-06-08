@@ -50,10 +50,10 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save(commit=False)	
-            pid = request.POST.get('client_secret').split('_secret')[0]	
-            order.stripe_pid = pid	
-            order.original_bag = json.dumps(bag)	
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_bag = json.dumps(bag)
             order.save()
             for item_id, item_data in bag.items():
                 try:
@@ -82,7 +82,8 @@ def checkout(request):
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(
+                request, "There's nothing in your bag at the moment")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
@@ -93,21 +94,21 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-        # Attempt to prefill the form with any info the user maintains in their profile	
-        if request.user.is_authenticated:	
-            try:	
-                profile = UserProfile.objects.get(user=request.user)	
-                order_form = OrderForm(initial={	
-                    'full_name': profile.user.get_full_name(),	
-                    'email': profile.user.email,	
-                    'phone_number': profile.default_phone_number,	
-                    'postcode': profile.default_postcode,	
-                    'city': profile.default_city,	
-                    'street_address1': profile.default_address1,	
-                    'street_address2': profile.default_address2,	
-                })	
-            except UserProfile.DoesNotExist:	
-                order_form = OrderForm()	
+        # Attempt to prefill the form with any info the user maintains in their profile
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                order_form = OrderForm(initial={
+                    'full_name': profile.user.get_full_name(),
+                    'email': profile.user.email,
+                    'phone_number': profile.default_phone_number,
+                    'postcode': profile.default_postcode,
+                    'city': profile.default_city,
+                    'street_address1': profile.default_address1,
+                    'street_address2': profile.default_address2,
+                })
+            except UserProfile.DoesNotExist:
+                order_form = OrderForm()
         else:
             order_form = OrderForm()
 

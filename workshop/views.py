@@ -12,7 +12,7 @@ def workshop(request):
     for workshop in workshop_details:
         print(workshop.pk)
 
-    context= {
+    context = {
         'workshop_details': workshop_details,
     }
 
@@ -57,4 +57,3 @@ def workshop_book(request, workshop_id):
 
 def workshops_booked(request):
     return render(request, 'workshop/workshops-booked.html')
-

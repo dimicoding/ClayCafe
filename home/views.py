@@ -1,16 +1,13 @@
 from django.shortcuts import render
 from .forms import ContactForm
 from django.core.mail import send_mail
-
 # Create your views here.
+
 
 def index(request):
     """View to return index page"""
     return render(request, 'index.html')
 
-from django.core.mail import send_mail
-from django.shortcuts import render
-from .forms import ContactForm
 
 def contact(request):
     """View to return index page"""

@@ -3,8 +3,8 @@ from product.models import Product
 from django.contrib import messages
 
 
-
 # Create your views here.
+
 
 def view_bag(request):
     """View to return bag page"""
@@ -21,7 +21,8 @@ def add_to_bag(request, item_id):
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
-        messages.success(request, f'Updated quantity to {bag[item_id]} {product.name}`s')
+        messages.success(
+            request, f'Updated quantity to {bag[item_id]} {product.name}`s')
     else:
         bag[item_id] = quantity
         messages.success(request, f'Added {product.name} to your bag')
@@ -39,11 +40,12 @@ def adjust_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Updated quantity to {bag[item_id]} {product.name}`s')
+        messages.success(
+            request, f'Updated quantity to {bag[item_id]} {product.name}`s')
     else:
         bag.pop(item_id)
         messages.success(request, f'Removed {product.name} from your bag')
-        
+
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
 

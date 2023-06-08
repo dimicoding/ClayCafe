@@ -3,6 +3,7 @@ from .models import Product, Category
 
 # Register your models here.
 
+
 class CategoryAdmin(admin.ModelAdmin):
     """
     Categories admin panel

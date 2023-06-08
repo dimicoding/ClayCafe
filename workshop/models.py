@@ -13,14 +13,17 @@ class Workshop(models.Model):
     location = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     places = models.PositiveIntegerField()
-    
+
     def __str__(self):
         return str(self.id)
 
+
 class Booking(models.Model):
     id = models.AutoField(primary_key=True)
-    workshop_id = models.ForeignKey('Workshop', null=True, blank=True, on_delete=models.SET_NULL)
-    user_id = models.ForeignKey(User, null=True, blank=True,  on_delete=models.CASCADE)
+    workshop_id = models.ForeignKey(
+        'Workshop', null=True, blank=True, on_delete=models.SET_NULL)
+    user_id = models.ForeignKey(
+        User, null=True, blank=True,  on_delete=models.CASCADE)
     created_on = models.DateTimeField()
     content = models.TextField(blank=True)
 

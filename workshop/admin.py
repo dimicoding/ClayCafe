@@ -29,6 +29,5 @@ class BookingAdmin(admin.ModelAdmin):
     )
 
 
-
 admin.site.register(Workshop, WorkshopAdmin)
 admin.site.register(Booking, BookingAdmin)
