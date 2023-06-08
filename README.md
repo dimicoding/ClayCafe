@@ -230,6 +230,11 @@ Add to README.md file
     - README/TESTING
 
 
+# Testing
+
+Click [**here**](TESTING.md) to go to the testing.
+
+
 # Credits
 
 #### Color gradient for the product category buttons:
