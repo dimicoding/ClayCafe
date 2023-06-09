@@ -5,7 +5,7 @@
 
 <p align="justify">Welcome to Clay Cafe. We are an ecommerce business specializing in handmade clay products that are as beautiful as they are unique. Explore our collection of vases, cups, plates & bowls, and discover the magic of clay artistry.
 
-But we offer more than just products. Dive into our blog, where we share pottery tips, techniques, and inspiration. Join our on-site workshops to get hands-on experience and learn from skilled artisans and while you're here, don't forget to have a sip of our tasty roasted coffee and snacks for a complete sensory experience.
+We offer more than just products. Dive into our blog, where we share pottery tips, techniques, and inspiration. Join our on-site workshops to get hands-on experience and learn from skilled artisans and while you're here, don't forget to have a sip of our tasty roasted coffee and snacks for a complete sensory experience.
 
 At Clay Cafe, we're passionate about fostering creativity and providing a space for art enthusiasts to connect. Join us on this clay-filled journey and uncover the wonders of handmade art at Clay Cafe.</p>
 
@@ -604,6 +604,12 @@ Cohort facilitator's Kay Welfare project: https://chirpy-chooks.herokuapp.com/ ,
 Blog and Contact pages where adapted from my PP4 project: https://github.com/dimicoding/wildflour-blogue/tree/main
 
 Images: https://www.freeimages.com/, https://unsplash.com/, https://www.pexels.com/
+
+# Acknowledgments
+
+- I am grateful to the tutors at Code Institute, Ed and Sarah for their unwavering support and quick troubleshooting.
+- Thanks to Kay Welfare and Paul Thomas O’Riordan, Cohort Facilitator for sharing tips, material, and personal experience.
+- Thanks to my mentor Adegbenga Adeye for the feedback and disponibility.
 
 
 
