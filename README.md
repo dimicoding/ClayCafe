@@ -486,6 +486,69 @@ To deploy the app using Heroku, follow these steps:
 - Enable automatic deploys.
 - Click the "Deploy Branch" button.
 
+#### Hosting images and static file with AWS
+
+To host images and static files using AWS, perform the following steps:
+
+- Create an AWS account and access the AWS Management Console from the "My Account" dropdown menu.
+- Locate and access the S3 service and create a new bucket.
+- Check "ACLs enabled" under Object Ownership.
+- Uncheck "Block all public access" and acknowledge the requirement for public access to static files.
+- Configure the bucket settings as follows:
+- Enable static website hosting under Properties.
+- Copy the provided code into the CORS section under Permissions:
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+- Go to the "Policy generator" under Bucket policy.
+- Select "S3 Bucket Policy" as the bucket type.
+- Set the principal to "*" to allow access to all principles.
+- Set the actions to "GetObject".
+- Paste the ARN from the bucket settings tab.
+- Click "Add Statement" and then "Generate Policy".
+- Copy the generated policy and paste it into the bucket policy editor. Append "/*" to the end of the resource key.
+- Save the changes.
+
+- Check the "List" checkbox for "Everyone (public access)" under Access control list (ACL).
+
+- Create a user in the IAM (Identity and Access Management) to access the bucket.
+- In the IAM, go to "User Groups" in the left sidebar.
+- Create a group for the user, assign an access policy that grants the group access to the S3 bucket, and assign the user to the group to enable access to all files.
+
+#### Connecting Django to S3
+
+To connect Django to S3, follow these steps:
+
+- Install the "boto3" and "django-storages" packages, and add 'storages' to INSTALLED_APPS in settings.py.
+- Configure settings.py accordingly, including the necessary AWS variables.
+- Add new config vars in the Heroku app settings, including user credentials from AWS.
+- Create a custom_storages.py file.
+- Upload the static files and media files to S3.
+
+#### Add Stripe keys to Heroku
+
+To add Stripe keys to the Heroku app, perform the following steps:
+
+- From the Stripe account, go to "Developers" > "API keys" and copy the Public Key and Secret Key.
+- Set them as config vars in the Heroku app settings.
+
+#### Creating a New Webhook Endpoint for Deployed Site
+
+To create a new webhook endpoint for the deployed site and enable all events, follow the instructions provided by Stripe. Then, add the Signing Secret to the Heroku app config vars.
+
+
+
 # Credits
 
 Code Institutes' e-commerce walkthrough, Boutique Ado
