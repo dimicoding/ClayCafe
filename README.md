@@ -446,7 +446,45 @@ To protect sensitive information, such as the database URL, and other secret key
 - Give name, value and scope.
 - Conclude with Add variable
 
+<br>
+To connect to the new database:
+- If defined value exists in the variables, execute new database.
+- Else, use the default database db.sqlite3
 
+    if 'DATABASE_URL' in os.environ:
+        DATABASES = {
+            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    else:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            }
+        }
+
+<br>
+Load in fixtures. Save the changes and migrate them. 
+
+#### Preparing for Heroku
+
+- Create a Procfile that instructs Heroku to create a web dyno to run Gunicorn and serve the Django app.
+- Temporarily disable collectstatic to prevent Heroku from collecting static files during deployment.
+- Allow Heroku as a host: Add the following line to settings.py: ``ALLOWED_HOSTS = ['app-name.herokuapp.com']``
+
+#### Connecting Heroku to Database
+
+- In the Heroku dashboard, go to the "Settings" tab.
+- Add three new config vars: DATABASE_URL and SECRET_KEY
+
+#### Deyploying with Heroku
+
+To deploy the app using Heroku, follow these steps:
+
+- In the Heroku dashboard, go to the "Deploy" tab.
+- Select "GitHub" as the deployment method and choose the appropriate repository.
+- Enable automatic deploys.
+- Click the "Deploy Branch" button.
 
 # Credits
 
