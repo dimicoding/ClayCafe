@@ -36,6 +36,7 @@ At Clay Cafe, we're passionate about fostering creativity and providing a space 
         - [Wireframes](#wireframes)
         - [Database](#database)
 - [Agile](#target-audience)
+- [SEO and Marketing](#seo-and-marketing)
 - [Features](#features)
     - [Navigation Bar](#navigation-bar)
     - [Footer](#footer)
@@ -50,7 +51,6 @@ At Clay Cafe, we're passionate about fostering creativity and providing a space 
     - [Checkout](#checkout)
 - [Features Left to Implement](#features-left-to-implement)
 - [Testing](#testing)
-- [SEO and Marketing](#seo-and-marketing)
 - [Fixed Bugs](#fixed-bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -259,6 +259,10 @@ Add to README.md file
     - Depending on the time left add could have have functionality.
     - SEO and Webmarketing
     - README/TESTING
+  
+# SEO and Marketing
+
+Click [**here**](MARKETING.md) to go to the SEO and Marketing strategies.
 
 
 # Features
@@ -401,14 +405,27 @@ Add to README.md file
 
 ![navbar](media/readme/readme/features/checkout-success.png)
 
+# Features Left To Implement
+
+- Booked Workshops: When the user is redirected to the booked workshops page, they will see their booking details, including the date, time, place, and number of reserved places.
+
+- Functional Sorting on the Category Page.
+
+- Expand Payment Methods: Integrate additional payment methods, such as Google Pay and PayPal.
+
+- Gallery Page Addition: Create a dedicated gallery page.
+
+- Workshop Videos: Produce video samples showcasing workshop lessons, pottery tips, and techniques.
+
+- Worldwide Shipping: Expand our shipping capabilities to include more countries for international shipping, in addition to nationwide delivery.
+
+- Gourmet Roasted Coffee Category: Include a category for selling gourmet roasted coffee.
+
+
 
 # Testing
 
 Click [**here**](TESTING.md) to go to the testing.
-
-# SEO and Marketing
-
-Click [**here**](MARKETING.md) to go to the SEO and Marketing strategies.
 
 # Deployment
 This project underwent deployment using a combination of Heroku, ElephantSQL, and AWS. 
