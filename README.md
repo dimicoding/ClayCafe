@@ -402,7 +402,6 @@ Add to README.md file
 ![navbar](media/readme/readme/features/checkout-success.png)
 
 
-
 # Testing
 
 Click [**here**](TESTING.md) to go to the testing.
@@ -410,6 +409,44 @@ Click [**here**](TESTING.md) to go to the testing.
 # SEO and Marketing
 
 Click [**here**](MARKETING.md) to go to the SEO and Marketing strategies.
+
+# Deployment
+This project underwent deployment using a combination of Heroku, ElephantSQL, and AWS. 
+
+#### Installing libraries
+To ensure successful deployment on Heroku, the following libraries need to be installed
+
+- Install pyscopg2 to establish a connection with PostgreSQL:
+``pip3 install dj_database_url pyscopg2``
+
+- Install Gunicorn to run Django on Heroku:
+``pip3 install django gunicorn``
+
+#### Creating the Heroku App
+
+- Log into Heroku and access the Dashboard.
+- Click on "New" and choose "Create new app" from the drop-down menu.
+- Select an appropriate name for the app and choose the relevant region, then click "Create App".
+
+#### Create PostgreSQL database using ElephantSQL
+To enable access to the database for the deployed Heroku app, it is necessary to create a PostgreSQL database using ElephantSQL. Steps:
+
+- Log into ElephantSQL and navigate to the Dashboard.
+- Click on "Create New Instance".
+- Set up a plan by providing a name for the project and selecting a plan (for this project, the free plan "Tiny Turtle" was chosen). Tags are optional.
+- Click on "Select Region" and choose the appropriate Data center.
+- Review all the details and click "Create Instance".
+- Return to the Dashboard and click on the name of the newly created instance.
+- Copy the database URL from the details section.
+
+#### Protecting Sensitive Information
+To protect sensitive information, such as the database URL, and other secret keys I defined variables follow these steps:
+- Gitpod, user settings
+- Select variables, and click on the button "New Variable"
+- Give name, value and scope.
+- Conclude with Add variable
+
+
 
 # Credits
 
@@ -430,7 +467,7 @@ Cohort facilitator's Kay Welfare project: https://chirpy-chooks.herokuapp.com/ ,
 
 Blog and Contact pages where adapted from my PP4 project: https://github.com/dimicoding/wildflour-blogue/tree/main
 
-
+Images: https://www.freeimages.com/, https://unsplash.com/, https://www.pexels.com/
 
 
 
