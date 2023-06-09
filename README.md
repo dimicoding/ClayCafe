@@ -41,22 +41,16 @@ At Clay Cafe, we're passionate about fostering creativity and providing a space 
     - [Footer](#footer)
     - [Home Page](#home-page)
     - [Shop](#all-products)
-    - [Category Page](#category-page)
-    - [Product Details](#product-details)
+    - [Category](#category)
     - [Workshops](#workshops)
-    - [Workshop Details](#)
-    - [Blog](#)
-    - [Blog Details](#)
-    - [Blog Comments](#)
-    - [Contact](#)
-    - [Profile](#)
-    - [Bag](#)
-    - [Checkout](#)
-    - [Login](#login)
-    - [Register](#register)
-    - [Logout](#logout)
+    - [Blog](#blog)
+    - [Contact](#contact-form)
+    - [Profile](#profile)
+    - [Bag](#bag)
+    - [Checkout](#checkout)
 - [Features Left to Implement](#features-left-to-implement)
 - [Testing](#testing)
+- [SEO and Marketing](#seo-and-marketing)
 - [Fixed Bugs](#fixed-bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -413,6 +407,9 @@ Add to README.md file
 
 Click [**here**](TESTING.md) to go to the testing.
 
+# SEO and Marketing
+
+Click [**here**](MARKETING.md) to go to the SEO and Marketing strategies.
 
 # Credits
 
