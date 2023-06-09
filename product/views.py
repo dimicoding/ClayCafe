@@ -32,7 +32,10 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
-        # python documentation for urllib.parse and unquote https://docs.python.org/3/library/urllib.parse.html
+        '''
+        python documentation for urllib.parse and 
+        unquote https://docs.python.org/3/library/urllib.parse.html
+        '''
         if 'category' in request.GET:
             encoded_categories = request.GET.getlist('category')
             categories = [unquote(category) for category in encoded_categories]

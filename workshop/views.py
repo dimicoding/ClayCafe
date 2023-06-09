@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.generic import ListView
 from django.utils import timezone
 from .models import Workshop, Booking
 from .forms import BookingForm

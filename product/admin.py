@@ -11,7 +11,8 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'cat_name',
     )
-    
+
+
 class ProductAdmin(admin.ModelAdmin):
     """
     Products admin panel
@@ -24,8 +25,6 @@ class ProductAdmin(admin.ModelAdmin):
         'category',
     )
     ordering = ('-id',)
-
-
 
 
 admin.site.register(Category, CategoryAdmin)

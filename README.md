@@ -427,6 +427,8 @@ Click [**here**](MARKETING.md) to go to the SEO and Marketing strategies.
 
 Click [**here**](TESTING.md) to go to the testing.
 
+# Fixed Bugs
+
 # Deployment
 This project underwent deployment using a combination of Heroku, ElephantSQL, and AWS. 
 

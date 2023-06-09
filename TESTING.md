@@ -98,9 +98,14 @@ To ensure the quality of the JavaScript/JQuery, I used JSHint for validation. It
 ### PEP8 Validation
 To verify python in this project i used the command `flake8 --statistics`
 
-Many issues were identified and resolved during the project, such as unidentified imports and duplicates. However, to meet the project submission deadline, some non-critical issues were left unresolved. The screenshot below provides a visual representation of the remaining issues. These issues primarily affect code readability and consistency rather than the functionality of the project.
+Many issues were identified and resolved during the project, such as unidentified imports and duplicates. However, to meet the project submission deadline, some of the non-critical issues like "line too-long" were left unresolved. The screenshot below provides a visual representation of the remaining issues. These issues primarily affect code readability and consistency rather than the functionality of the project.
 
+#### Before
 ![flake-statistics](media/readme/readme/flake8%20--statistics.png)
+
+##### After
+![flake-statistics](media/readme/readme/pep8.png)
+
 
 ## Responsiveness
 

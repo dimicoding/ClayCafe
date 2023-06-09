@@ -1,11 +1,12 @@
 from django import forms
 from .models import Order
 
+
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',
-                  'city','address1',
+                  'city', 'address1',
                   'address2', 'postcode',)
 
     def __init__(self, *args, **kwargs):
@@ -31,6 +32,5 @@ class OrderForm(forms.ModelForm):
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
