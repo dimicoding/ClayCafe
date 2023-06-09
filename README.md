@@ -170,10 +170,26 @@ All images used in this e-commerce store are sourced from free services such as 
 
 ### Wireframes
 
+- Navbar, Home page and footer.(Larger screens left | smaller screens right)
 ![Wireframes-1](/media/readme/readme/wirefremes-1.jpeg)
+<br>
+
+
+- Product Details View
 ![Wireframes-2](/media/readme/readme/wireframes-2.jpeg)
+<br>
+
+- Bag and Workshop Wireframes
 ![Wireframes-3](/media/readme/readme/wireframes-3.jpeg)
+<br>
+
+- Checkout and Contact
 ![Wireframes-4](/media/readme/readme/wireframes-4.jpeg)
+<br>
+
+- Inspirations from diverse E-commerce stores. (Example)
+![dm](media/readme/readme/dm-inspiracao.png)
+<br>
 
 ### Database
 walktrought databases and custom models 
