@@ -293,6 +293,16 @@ Many issues were identified and resolved during the project, such as unidentifie
 | **Payment** | Fill out form and click Complete Order button. | Form validation is in effect. Loading spinner displays while payment is being processed. User is directed to Checkout Success page. Success message informs user of successful order placement with order number and email address. |
 | **Checkout Success page** | Complete an order and get directed to Checkout Success page. | User can view complete summery of placed order, inlcuding reference number,order date, order contents, personal info and biling info of the order. Go home button links back to the home page. |
 
+**Stripe- Webhooks and email order confirmation**
+
+<br>
+
+![stripe](media/readme/readme/Screenshot-Stripe.png)
+
+<br>
+
+![email confirmation](media/readme/readme/realemail-order.png)
+
 ## Testing aknowledgments
 
 During this phase, I came to the realization that for a project of this scale and with a tight deadline of approximately three weeks, I needed to adopt a different approach. I realize the importance of testing each individual app once its main functionality was implemented would have produced a better result, rather than attempting to test everything simultaneously. This approach would have prevented me from feeling overwhelmed and allowed for better testing and early error correction. Unfortunately, I only realized this now, but it has served as a valuable lesson for future projects.

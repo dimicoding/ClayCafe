@@ -38,16 +38,20 @@ At Clay Cafe, we're passionate about fostering creativity and providing a space 
 - [Agile](#target-audience)
 - [Features](#features)
     - [Navigation Bar](#navigation-bar)
-    - [The Landing Page](#the-landing-page)
-    - [Categories](#second-section--sneak-peek-into-my-classroom)
     - [Footer](#footer)
-    - [Blog](#blog)
-    - [Blog Category](#blog-category)
-    - [Recipe](#recipe)
-    - [Create Recipes](#create-recipe)
-    - [About Page](#about-page)
-    - [Contact Page](#contact)
-    - [User](#user)
+    - [Home Page](#home-page)
+    - [Shop](#all-products)
+    - [Category Page](#category-page)
+    - [Product Details](#product-details)
+    - [Workshops](#workshops)
+    - [Workshop Details](#)
+    - [Blog](#)
+    - [Blog Details](#)
+    - [Blog Comments](#)
+    - [Contact](#)
+    - [Profile](#)
+    - [Bag](#)
+    - [Checkout](#)
     - [Login](#login)
     - [Register](#register)
     - [Logout](#logout)
@@ -164,6 +168,18 @@ All fonts used in this project are the default fonts from bootstrap 5.3 classes.
 
 All images used in this e-commerce store are sourced from free services such as Pexels and Unsplash. The names of the authors of the images have not been altered, and you can find their names in the media folder. The majority of the captivating product images were provided by Tom Crew, as his images' backgrounds align with the color scheme of this store.
 
+### Wireframes
+
+![Wireframes-1](/media/readme/readme/wirefremes-1.jpeg)
+![Wireframes-2](/media/readme/readme/wireframes-2.jpeg)
+![Wireframes-3](/media/readme/readme/wireframes-3.jpeg)
+![Wireframes-4](/media/readme/readme/wireframes-4.jpeg)
+
+### Database
+walktrought databases and custom models 
+
+![ERD Diagram](/media/readme/readme/ClayCafe%20-%20ERD%20with%20colored%20entities%20(UML%20notation)%20(2).png)
+
 # Agile Methodology
 
 * Base- Sprint 1 - 16/05/2023 - 20/05/2023 (Finished at ??/05/2023)
@@ -234,17 +250,147 @@ Add to README.md file
     - SEO and Webmarketing
     - README/TESTING
 
-### Wireframes
 
-![Wireframes-1](/media/readme/readme/wirefremes-1.jpeg)
-![Wireframes-2](/media/readme/readme/wireframes-2.jpeg)
-![Wireframes-3](/media/readme/readme/wireframes-3.jpeg)
-![Wireframes-4](/media/readme/readme/wireframes-4.jpeg)
+# Features
 
-### Database
-walktrought databases and custom models 
+## Navigation Bar
 
-![ERD Diagram](/media/readme/readme/ClayCafe%20-%20ERD%20with%20colored%20entities%20(UML%20notation)%20(2).png)
+<br>
+
+![navbar](media/readme/readme/features/navbar.png)
+
+## Footer
+<br>
+
+![navbar](media/readme/readme/features/footer.png)
+
+## Home Page
+<br>
+
+![navbar](media/readme/readme/features/home-page.png)
+
+<br>
+
+- Cafe Menu
+
+![navbar](media/readme/readme/features/coffee-menu.png)
+
+## Shop
+<br>
+
+![navbar](media/readme/readme/features/all-products.png)
+
+<br>
+
+- Category Page
+
+![navbar](media/readme/readme/features/cups-category-page.png)
+
+<br>
+
+- Product Details
+
+![navbar](media/readme/readme/features/product-detail.png)
+
+
+## Workshops
+
+<br>
+
+![navbar](media/readme/readme/features/workshops.png)
+
+<br>
+
+- Workshop Details
+
+![navbar](media/readme/readme/features/workshop-details.png)
+
+<br>
+
+- Workshop Reservation 
+
+![navbar](media/readme/readme/features/workshop-reservation.png)
+
+<br>
+
+- Booked Workshops
+
+![navbar](media/readme/readme/features/booked-workshops.png)
+
+## Blog
+
+<br>
+
+![navbar](media/readme/readme/features/blog.png)
+
+<br>
+
+- Blog Details 
+
+![navbar](media/readme/readme/features/blog-details.png)
+
+<br>
+
+![navbar](media/readme/readme/features/blog-comments.png)
+
+## Contact Form
+
+<br>
+
+![navbar](media/readme/readme/features/contact-form.png)
+
+## Profile
+
+- Product Management(admin)
+
+![navbar](media/readme/readme/features/product-managment.png)
+
+<br>
+
+- My Profile
+
+![navbar](media/readme/readme/features/my-profile.png)
+
+<br>
+
+- Sign-in 
+
+![navbar](media/readme/readme/features/sign-in.png)
+
+<br>
+
+- Sign-up
+
+![navbar](media/readme/readme/features/signup.png)
+
+<br>
+
+- Signout
+
+![navbar](media/readme/readme/features/signout.png)
+
+## Bag 
+
+<br>
+
+![navbar](media/readme/readme/features/bag-view.png)
+
+## Checkout
+
+![navbar](media/readme/readme/features/checkout.png)
+
+<br>
+
+- Checkout Payments
+
+![navbar](media/readme/readme/features/checkout-payment.png)
+
+<br>
+
+- Checkout Success
+
+![navbar](media/readme/readme/features/checkout-success.png)
+
 
 
 # Testing
