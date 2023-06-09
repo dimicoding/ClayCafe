@@ -413,7 +413,9 @@ Click [**here**](MARKETING.md) to go to the SEO and Marketing strategies.
 
 # Credits
 
-#### Color gradient for the product category buttons:
+Code Institutes' e-commerce walkthrough, Boutique Ado
+
+Color gradient for the product category buttons and add to bag button, https://colorate.azurewebsites.net/
 
 Color Palette by [ColorHunt](https://colorhunt.co/)
 
@@ -425,6 +427,12 @@ Navbar adapted from: https://demit-sb.herokuapp.com/
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 
 Cohort facilitator's Kay Welfare project: https://chirpy-chooks.herokuapp.com/ , helped me to structurize the manual testing in a more complete way.
+
+Blog and Contact pages where adapted from my PP4 project: https://github.com/dimicoding/wildflour-blogue/tree/main
+
+
+
+
 
 
 

@@ -7,6 +7,9 @@
 - [SEO Improvements](#seo-improvements)
 - [Marketing Strategies](#marketing-strategies)
 
+## Business Model
+ClayCafe serves B2C customers, providing a wide range of pottery products, workshops, and a blog. The core business intent is to offer a seamless shopping experience, showcasing artisanal ceramics, vases, cups, plates & bowls. ClayCafe also provides pottery workshops for individuals interested in learning the art. Marketing strategies include SEO, social media marketing, and email marketing to drive traffic and boost sales. The blog enhances customer engagement and establishes thought authority and leadership in the pottery field.
+
 ## Keyword Research
 
 <hr>
