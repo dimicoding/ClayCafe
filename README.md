@@ -431,15 +431,17 @@ Click [**here**](TESTING.md) to go to the testing.
 
 Throughout this project, several issues have arisen. While some were resolved through my own efforts, others were more challenging and required the assistance of the tutor team at Code Institute. I would like to express my immense gratitude to them for helping me quickly identify my mistakes and save my precious time.
 
-1- AWS Deployment Issue: When deploying to Heroku, there was an issue with loading static files to AWS. After spending some time troubleshooting with tutor support, the problem was resolved by creating a new bucket on the third attempt. The root cause of the issue was likely related to the secret key.
+**1**- AWS Deployment Issue: When deploying to Heroku, there was an issue with loading static files to AWS. After spending some time troubleshooting with tutor support, the problem was resolved by creating a new bucket on the third attempt. The root cause of the issue was likely related to the secret key.
 
 ![AWS](media/readme/aws.png)
 
 <br>
 
-2- Stripe Webhooks Issue: While working quickly through the content, I encountered an issue while trying to get Stripe to work with the deployed website. Taking a few steps back and setting the endpoints to localhost partially resolved the problem. A significant breakthrough to solve the issue was made when I discovered, with the help of the tutor support, that stopping the workspace and running the workspace again after updating the new variable value is necessary. After this lesson was learned, the webhooks became functional.
+**2**- Stripe Webhooks Issue: While working quickly through the content, I encountered an issue while trying to get Stripe to work with the deployed website. Taking a few steps back and setting the endpoints to localhost partially resolved the problem. A significant breakthrough to solve the issue was made when I discovered, with the help of the tutor support, that stopping the workspace and running the workspace again after updating the new variable value is necessary. After this lesson was learned, the webhooks became functional.
 
 ![AWS](media/readme/readme/stripelocalhost.png)
+
+**3**-Dropdown/Toggle Buttons Issue: Initially, I encountered some issues with dropdown/toggle buttons on the base and home page, as the walkthrough was based on Bootstrap 4, while I had version 5.3. It took some time to understand the minor changes in class naming that Bootstrap made. After updating the classes, the problem was successfully resolved.
 
 
 
